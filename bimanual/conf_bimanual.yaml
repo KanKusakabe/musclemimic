@@ -1,4 +1,4 @@
-# Bimanual configuration for deep mimic imitation learning (aligned with fullbody base structure)
+# Bimanual configuration for demo
 defaults:
   - override hydra/job_logging: default
   - override hydra/launcher: basic
@@ -25,11 +25,11 @@ experiment:
     # Disable only for simplified bimanual variants.
     disable_fingers: false
 
-    # Observations (mirroring style of fullbody config)
-    enable_muscle_length_observations: false
-    enable_muscle_velocity_observations: false
+    # Observations
+    enable_muscle_length_observations: true
+    enable_muscle_velocity_observations: true
     enable_muscle_force_observations: true
-    enable_muscle_excitation_observations: false
+    enable_muscle_excitation_observations: true
     enable_muscle_activation_observations: true
     enable_touch_sensor_observations: false
 
@@ -37,12 +37,11 @@ experiment:
     goal_type: GoalBimanualTrajMimic
     goal_params:
       visualize_goal: false
-      n_step_lookahead: 1
+      n_step_lookahead: 5
       upper_body_xml_name: thorax
       enable_motion_phase: true
-      # Optional goal parameters for variants that support them.
-      # n_step_stride: 20
-      # use_concise_lookahead: true
+      n_step_stride: 20
+      use_concise_lookahead: true
       sites_for_mimic:
         - upper_body_mimic
         - left_shoulder_mimic
@@ -57,8 +56,8 @@ experiment:
 
     reward_type: MimicReward
     reward_params:
-      qpos_w_sum: 0.5
-      qvel_w_sum: 0.5
+      qpos_w_sum: 0.1
+      qvel_w_sum: 0.1
       root_vel_w_sum: 0.0     # Keep explicit for reward variants that use root velocity.
       rpos_w_sum: 2.0
       rquat_w_sum: 0.2
@@ -77,10 +76,10 @@ experiment:
     terminal_state_type: EnhancedBimanualTerminalStateHandler
     terminal_state_params:
       # Canonical threshold alias used by shared tooling
-      mean_site_deviation_threshold: 0.05
+      mean_site_deviation_threshold: 0.25
 
       # Handler-specific thresholds
-      max_site_deviation: 0.05
+      max_site_deviation: 0.25
       enable_reference_check: true
       site_deviation_mode: "mean"
       debug_print: false
@@ -89,12 +88,12 @@ experiment:
   # Algorithm selection
   algorithm: PPOJax
 
-  # Network architecture (match fullbody style)
+  # Network architecture
   actor_hidden_layers: [1024, 1024, 1024, 1024]
   critic_hidden_layers: [1024, 1024, 1024, 1024]
   activation: silu
 
-  # Training configuration (match fullbody naming)
+  # Training configuration
   lr: 4e-4
   num_envs: ${experiment.env_params.num_envs}
   total_timesteps: 2048000000
@@ -117,12 +116,11 @@ experiment:
     beta: 0.95
     nesterov: true
     ns_steps: 5
-    weight_decay: 1e-3
     adaptive: false
 
-  # PPO-specific hyperparameters (moved into ppo_config like fullbody)
+  # PPO-specific hyperparameters
   ppo_config:
-    num_steps: 10
+    num_steps: 20
     update_epochs: 1
     num_minibatches: 32
     gamma: 0.99
