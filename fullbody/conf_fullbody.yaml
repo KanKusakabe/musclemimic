@@ -22,8 +22,8 @@ experiment:
     headless: True
     horizon: 1000
     disable_fingers: true
-    mjx_backend: warp
-    num_envs: 8192
+    mjx_backend: mjx
+    num_envs: 2048
 
     enable_muscle_length_observations: true
     enable_muscle_velocity_observations: true
@@ -134,7 +134,7 @@ experiment:
   ppo_config:
     num_steps: 20
     update_epochs: 1
-    num_minibatches: 128
+    num_minibatches: 32
     gamma: 0.99
     gae_lambda: 0.95
     clip_eps: 0.2
