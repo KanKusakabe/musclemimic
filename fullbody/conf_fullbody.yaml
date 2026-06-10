@@ -23,7 +23,7 @@ experiment:
     horizon: 1000
     disable_fingers: true
     mjx_backend: mjx
-    num_envs: 2048
+    num_envs: 1024
 
     enable_muscle_length_observations: true
     enable_muscle_velocity_observations: true
