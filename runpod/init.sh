@@ -24,7 +24,7 @@ if ! command -v uv &> /dev/null; then
     echo 'source $HOME/.local/bin/env' >> ~/.bashrc
 fi
 
-echo "🔑 [3/5] GitHub SSH 認証の設定..."
+echo "🔑 [3/5] GitHub SSH 認証とユーザー設定..."
 mkdir -p ~/.ssh
 # SSH鍵はGit管理外の RunPodルート(/workspace) にある想定
 if [ -f "/workspace/.ssh/id_ed25519" ]; then
@@ -35,6 +35,11 @@ if [ -f "/workspace/.ssh/id_ed25519" ]; then
 else
     echo "⚠️ Warning: /workspace/.ssh/id_ed25519 が見つかりません。"
 fi
+
+# Gitのユーザー情報（コミット用）を自動設定
+git config --global user.name "Kan Kusakabe"
+git config --global user.email "kan86yeaoh@gmail.com"
+echo "✅ Gitのユーザー情報を設定しました。"
 
 echo "🔐 [4/5] RunPod Secrets からの認証逆算とログイン..."
 # SSH経由等で変数が消えている場合、コンテナ大元(PID 1)から強制抽出

@@ -1,0 +1,47 @@
+{
+  "os": "Linux-6.8.0-60-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.10",
+  "startedAt": "2026-06-11T02:57:39.755237Z",
+  "args": [
+    "--config-name=conf_fullbody_demo",
+    "++experiment.env_params.mjx_backend=mjx",
+    "++experiment.env_params.num_envs=8192",
+    "++experiment.ppo_config.num_minibatches=128",
+    "++experiment.ppo_config.total_timesteps=80000000"
+  ],
+  "program": "/workspace/musclemimic/fullbody/experiment.py",
+  "codePath": "fullbody/experiment.py",
+  "codePathLocal": "fullbody/experiment.py",
+  "git": {
+    "remote": "git@github.com:KanKusakabe/musclemimic.git",
+    "commit": "1332a9b029d18932c65c1f1b9f668296e1076ed9"
+  },
+  "email": "kusakabe.kan.v5@elms.hokudai.ac.jp",
+  "root": "/workspace/musclemimic",
+  "host": "26ce88e04b33",
+  "executable": "/workspace/musclemimic/.venv/bin/python3",
+  "cpu_count": 48,
+  "cpu_count_logical": 96,
+  "gpu": "NVIDIA RTX A6000",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "42949672960",
+      "used": "724672512"
+    }
+  },
+  "memory": {
+    "total": "540642619392"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A6000",
+      "memoryTotal": "51527024640",
+      "cudaCores": 10752,
+      "architecture": "Ampere",
+      "uuid": "GPU-bf0432a7-afab-d041-7825-e21fa547deaa"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "37g5b8p1zaohlw3qndx6x9rjob6dzg04"
+}

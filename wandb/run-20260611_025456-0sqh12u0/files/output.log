@@ -1,0 +1,331 @@
+[2026-06-11 02:54:58,883][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-11 02:55:02,179][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-11 02:55:02,181][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-11 02:55:02,182][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-11 02:55:02,182][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-11 02:55:02,183][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-11 02:55:02,184][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+INFO:2026-06-11 02:55:06,711:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-11 02:55:06,711][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-11 02:55:08,256][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz
+[2026-06-11 02:55:08,494][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz "HTTP/1.1 302 Found"
+[2026-06-11 02:55:08,739][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/amathislab/musclemimic-retargeted/xet-read-token/25e0ed41f9ab8f08aac98ab3d9b120a63de1bd46 "HTTP/1.1 200 OK"
+MyoFullBody/gmr/KIT/314/walking_medium09(…): 100%|██████████████████████████████████████████████| 6.26M/6.26M [00:01<00:00, 5.93MB/s]
+[2026-06-11 02:55:09,808][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Downloaded GMR cache: /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz
+[2026-06-11 02:55:09,822][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-11 02:55:10,134][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/348/turn_right03_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz
+[2026-06-11 02:55:10,300][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz "HTTP/1.1 302 Found"
+MyoFullBody/gmr/KIT/348/turn_right03_pos(…): 100%|██████████████████████████████████████████████| 5.01M/5.01M [00:01<00:00, 3.37MB/s]
+[2026-06-11 02:55:11,805][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Downloaded GMR cache: /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz
+[2026-06-11 02:55:11,807][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-11 02:55:11,851][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz
+[2026-06-11 02:55:11,995][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz "HTTP/1.1 302 Found"
+MyoFullBody/gmr/KIT/4/WalkInCounterClock(…): 100%|██████████████████████████████████████████████| 6.80M/6.80M [00:00<00:00, 13.6MB/s]
+[2026-06-11 02:55:12,505][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Downloaded GMR cache: /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz
+[2026-06-11 02:55:12,507][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-11 02:55:12,543][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-11 02:55:12,568][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[2026-06-11 02:55:14,317][musclemimic.runner.engine][INFO] - [MuscleMimic] Using validation-specific amass_dataset_conf.
+[2026-06-11 02:55:16,607][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-11 02:55:16,622][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-11 02:55:16,635][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-11 02:55:16,651][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-11 02:55:16,661][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[2026-06-11 02:55:16,877][musclemimic.runner.engine][INFO] - [MuscleMimic] Using separate validation trajectory (share disabled or dataset override).
+[2026-06-11 02:55:16,901][musclemimic.algorithms.ppo.ppo][INFO] - [ppo] roll out size=655360, minibatch size=5120, grad_steps=128, utd=0.0002, sample_reuse=1x, unrolls/1M=1.5, grad_steps/1M=195.3
+[2026-06-11 02:55:16,951][musclemimic.runner.engine][INFO] - [MuscleMimic] [Train] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+[2026-06-11 02:55:16,952][musclemimic.runner.engine][INFO] - [MuscleMimic] [Validation] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+  Left arm sites: ['left_elbow_mimic', 'left_hand_mimic']
+  Right arm sites: ['right_elbow_mimic', 'right_hand_mimic']
+[2026-06-11 02:55:17,432][musclemimic.runner.engine][INFO] - [MuscleMimic] Auto-resume: no checkpoint in /workspace/musclemimic/checkpoints/754c49e8b435, starting fresh
+[2026-06-11 02:55:17,459][musclemimic.runner.engine][INFO] - [MuscleMimic] Checkpoint directory: /workspace/musclemimic/checkpoints/754c49e8b435
+[2026-06-11 02:55:17,460][musclemimic.runner.engine][INFO] - [MuscleMimic] Experiment ID (config hash): 754c49e8b435
+[2026-06-11 02:55:17,514][musclemimic.runner.engine][INFO] - [MuscleMimic] Starting training...
+Trainable parameters: 13,735,621 (actor: 7,048,900, critic: 6,686,721, shared: 0)
+
+================================================================================
+Network Architecture:
+================================================================================
+
+Layer                                                   Shape                      Params
+-----------------------------------------------------------------------------------------
+actor/Dense_0/bias                                      (1024,)                     1,024
+actor/Dense_0/kernel                                    (2418, 1024)            2,476,032
+actor/Dense_1/bias                                      (1024,)                     1,024
+actor/Dense_1/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_2/bias                                      (1024,)                     1,024
+actor/Dense_2/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_3/bias                                      (1024,)                     1,024
+actor/Dense_3/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_4/bias                                      (1024,)                     1,024
+actor/Dense_4/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_5/bias                                      (354,)                        354
+actor/Dense_5/kernel                                    (1024, 354)               362,496
+actor/LayerNorm_0/bias                                  (1024,)                     1,024
+actor/LayerNorm_0/scale                                 (1024,)                     1,024
+actor/LayerNorm_1/bias                                  (1024,)                     1,024
+actor/LayerNorm_1/scale                                 (1024,)                     1,024
+actor/LayerNorm_2/bias                                  (1024,)                     1,024
+actor/LayerNorm_2/scale                                 (1024,)                     1,024
+actor/LayerNorm_3/bias                                  (1024,)                     1,024
+actor/LayerNorm_3/scale                                 (1024,)                     1,024
+actor/LayerNorm_4/bias                                  (1024,)                     1,024
+actor/LayerNorm_4/scale                                 (1024,)                     1,024
+critic/Dense_0/bias                                     (1024,)                     1,024
+critic/Dense_0/kernel                                   (2418, 1024)            2,476,032
+critic/Dense_1/bias                                     (1024,)                     1,024
+critic/Dense_1/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_2/bias                                     (1024,)                     1,024
+critic/Dense_2/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_3/bias                                     (1024,)                     1,024
+critic/Dense_3/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_4/bias                                     (1024,)                     1,024
+critic/Dense_4/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_5/bias                                     (1,)                            1
+critic/Dense_5/kernel                                   (1024, 1)                   1,024
+critic/LayerNorm_0/bias                                 (1024,)                     1,024
+critic/LayerNorm_0/scale                                (1024,)                     1,024
+critic/LayerNorm_1/bias                                 (1024,)                     1,024
+critic/LayerNorm_1/scale                                (1024,)                     1,024
+critic/LayerNorm_2/bias                                 (1024,)                     1,024
+critic/LayerNorm_2/scale                                (1024,)                     1,024
+critic/LayerNorm_3/bias                                 (1024,)                     1,024
+critic/LayerNorm_3/scale                                (1024,)                     1,024
+critic/LayerNorm_4/bias                                 (1024,)                     1,024
+critic/LayerNorm_4/scale                                (1024,)                     1,024
+log_std                                                 (354,)                        354
+-----------------------------------------------------------------------------------------
+Total                                                                          13,735,621
+================================================================================
+Traceback (most recent call last):
+  File "/workspace/musclemimic/fullbody/experiment.py", line 24, in <module>
+    experiment()
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+           ^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+            ^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/_internal/hydra.py", line 119, in run
+    ret = run_job(
+          ^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+                       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/workspace/musclemimic/musclemimic/runner/engine.py", line 566, in run_experiment
+    run_training(train_fn, rngs)
+  File "/workspace/musclemimic/musclemimic/runner/engine.py", line 425, in run_training
+    return train_fn(rngs)
+           ^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/pjit.py", line 268, in cache_miss
+    executable, pgle_profiler, const_args) = _python_pjit_helper(
+                                             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/pjit.py", line 137, in _python_pjit_helper
+    p, args_flat = _infer_params(fun, jit_info, args, kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/pjit.py", line 635, in _infer_params
+    return _infer_params_internal(fun, ji, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/pjit.py", line 659, in _infer_params_internal
+    p, args_flat = _infer_params_impl(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/pjit.py", line 556, in _infer_params_impl
+    jaxpr, consts, out_avals = _create_pjit_jaxpr(
+                               ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 504, in memoized_fun
+    ans = call(fun, *args)
+          ^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/pjit.py", line 1343, in _create_pjit_jaxpr
+    jaxpr, global_out_avals, consts = pe.trace_to_jaxpr_dynamic(fun, in_type)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/profiler.py", line 364, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/interpreters/partial_eval.py", line 2387, in trace_to_jaxpr_dynamic
+    ans = fun.call_wrapped(*in_tracers)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/api_util.py", line 73, in flatten_fun
+    ans = f(*py_args, **py_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+    ans = _fun(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/algorithms/common/base_algorithm.py", line 77, in <lambda>
+    return lambda rng_key: cls._train_fn(
+                           ^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/algorithms/ppo/ppo.py", line 212, in _train_fn
+    return train(
+           ^^^^^^
+  File "/workspace/musclemimic/musclemimic/algorithms/ppo/runner.py", line 701, in train
+    runner_state, metrics = jax.lax.scan(_update_step, runner_state, None, remaining_updates)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/loops.py", line 299, in scan
+    init_flat, carry_avals, carry_avals_out, init_tree, *rest = _create_jaxpr(init)
+                                                                ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/loops.py", line 281, in _create_jaxpr
+    jaxpr, consts, out_tree = _initial_style_jaxpr(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/common.py", line 63, in _initial_style_jaxpr
+    jaxpr, consts, out_tree = _initial_style_open_jaxpr(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/common.py", line 55, in _initial_style_open_jaxpr
+    jaxpr, _, consts = pe.trace_to_jaxpr_dynamic(wrapped_fun, in_avals)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/profiler.py", line 364, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/interpreters/partial_eval.py", line 2387, in trace_to_jaxpr_dynamic
+    ans = fun.call_wrapped(*in_tracers)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/api_util.py", line 90, in flatten_fun_nokwargs
+    ans = f(*py_args)
+          ^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+    ans = _fun(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/algorithms/ppo/runner.py", line 278, in _update_step
+    runner_state, traj_batch = _collect_trajectories(
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/algorithms/ppo/runner.py", line 917, in _collect_trajectories
+    return jax.lax.scan(_env_step, runner_state, None, config.num_steps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/loops.py", line 299, in scan
+    init_flat, carry_avals, carry_avals_out, init_tree, *rest = _create_jaxpr(init)
+                                                                ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/loops.py", line 281, in _create_jaxpr
+    jaxpr, consts, out_tree = _initial_style_jaxpr(
+                              ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/common.py", line 63, in _initial_style_jaxpr
+    jaxpr, consts, out_tree = _initial_style_open_jaxpr(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/lax/control_flow/common.py", line 55, in _initial_style_open_jaxpr
+    jaxpr, _, consts = pe.trace_to_jaxpr_dynamic(wrapped_fun, in_avals)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/profiler.py", line 364, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/interpreters/partial_eval.py", line 2387, in trace_to_jaxpr_dynamic
+    ans = fun.call_wrapped(*in_tracers)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/api_util.py", line 90, in flatten_fun_nokwargs
+    ans = f(*py_args)
+          ^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+    ans = _fun(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/algorithms/ppo/runner.py", line 892, in _env_step
+    obsv, reward, absorbing, done, info, env_state, transition_state = env.step_with_transition(env_state, action)
+                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 839, in step_with_transition
+    ) = self.env.step_with_transition(state.env_state, action)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 786, in step_with_transition
+    ) = self._step_with_autoreset(state, action)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 738, in _step_with_autoreset
+    reset_obs, reset_inner, reset_state = self._compute_reset_candidates(reset_keys)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 573, in _compute_reset_candidates
+    reset_obs, reset_state = self.env.reset(reset_keys)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 207, in reset
+    obs, env_state = self.env.reset(rng_key)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 414, in reset
+    return self._base_reset(rng_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/traceback_util.py", line 180, in reraise_with_filtered_traceback
+    return fun(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/api.py", line 1114, in vmap_f
+    out_flat = batching.batch(
+               ^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 212, in call_wrapped
+    return self.f_transformed(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/interpreters/batching.py", line 644, in _batch_outer
+    outs, trace = f(tag, in_dims, *in_vals)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/interpreters/batching.py", line 660, in _batch_inner
+    outs = f(*in_tracers)
+           ^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/interpreters/batching.py", line 342, in flatten_fun_for_vmap
+    ans = f(*py_args, **py_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/linear_util.py", line 429, in _get_result_paths_thunk
+    ans = _fun(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/wrappers/mjx.py", line 26, in reset
+    state = self.env.mjx_reset(rng_key)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/environments/base.py", line 704, in mjx_reset
+    return super().mjx_reset(
+           ^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/core/mujoco_mjx.py", line 205, in mjx_reset
+    data = mjx.forward(sys, data)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/forward.py", line 63, in wrapper
+    res = fn(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/forward.py", line 438, in forward
+    d = fwd_position(m, d)
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/forward.py", line 63, in wrapper
+    res = fn(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/forward.py", line 79, in fwd_position
+    d = smooth.factor_m(m, d)
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/smooth.py", line 369, in factor_m
+    qld = (qld / qld[jp.array(madr_ds)]).at[m.dof_Madr].set(qld_diag)
+                     ^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/numpy/array_constructors.py", line 229, in array
+    dtypes.lattice_result_type(*leaves)[0]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/dtypes.py", line 945, in lattice_result_type
+    dtypes, weak_types = zip(*(_dtype_and_weaktype(arg) for arg in args))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/dtypes.py", line 945, in <genexpr>
+    dtypes, weak_types = zip(*(_dtype_and_weaktype(arg) for arg in args))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/dtypes.py", line 675, in _dtype_and_weaktype
+    return dtype(value), any(value is typ for typ in _weak_types) or is_weakly_typed(value)
+           ^^^^^^^^^^^^
+  File "/workspace/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/dtypes.py", line 901, in dtype
+    def dtype(x: Any) -> DType:
+
+KeyboardInterrupt

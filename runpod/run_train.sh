@@ -16,7 +16,7 @@ uv run --no-sync fullbody/experiment.py --config-name=conf_fullbody_demo \
   ++experiment.env_params.mjx_backend=mjx \
   ++experiment.env_params.num_envs=8192 \
   ++experiment.ppo_config.num_minibatches=128 \
-  ++experiment.ppo_config.total_timesteps=15000000
+  ++experiment.ppo_config.total_timesteps=80000000
 
 EXIT_CODE=$?
 

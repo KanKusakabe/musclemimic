@@ -1,0 +1,111 @@
+[2026-06-10 08:12:45,187][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-10 08:12:49,562][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-10 08:12:49,564][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-10 08:12:49,566][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-10 08:12:49,567][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-10 08:12:49,568][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-10 08:12:49,570][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+INFO:2026-06-10 08:12:56,160:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 08:12:56,160][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 08:12:58,285][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz
+[2026-06-10 08:12:58,505][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz "HTTP/1.1 401 Unauthorized"
+[2026-06-10 08:12:58,509][amass][WARNING] - [MuscleMimic AMASS Retargeting Pipeline] Could not download GMR cache for KIT/314/walking_medium09_poses: 401 Client Error. (Request ID: Root=1-6a291c8a-397de25178b5c886016bd986;e054aa7d-6c11-4da9-a742-c3d57f7e4102)
+
+Cannot access gated repo for url https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz.
+Access to dataset amathislab/musclemimic-retargeted is restricted. You must have access to it and be authenticated to access it. Please log in.
+[2026-06-10 08:12:58,510][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Retargeting AMASS motion file using GMR ...
+[2026-06-10 08:12:58,512][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz
+[2026-06-10 08:12:58,646][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz "HTTP/1.1 401 Unauthorized"
+[2026-06-10 08:12:58,650][amass][WARNING] - [MuscleMimic AMASS Retargeting Pipeline] Could not download GMR cache for KIT/314/walking_medium09_poses: 401 Client Error. (Request ID: Root=1-6a291c8a-50e60393250f74b537274452;1dfb5d5b-a5a4-4d04-897e-928e5c46291e)
+
+Cannot access gated repo for url https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz.
+Access to dataset amathislab/musclemimic-retargeted is restricted. You must have access to it and be authenticated to access it. Please log in.
+[2026-06-10 08:12:58,652][amass][ERROR] - [MuscleMimic AMASS Retargeting Pipeline] Skipping dataset 'KIT/314/walking_medium09_poses' due to failure during retargeting: [LocoMuJoCo] Optional smpl dependencies not installed. Checkout the README for installation instructions. No module named 'joblib'
+[2026-06-10 08:12:58,654][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/348/turn_right03_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz
+[2026-06-10 08:12:58,782][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz "HTTP/1.1 401 Unauthorized"
+[2026-06-10 08:12:58,789][amass][WARNING] - [MuscleMimic AMASS Retargeting Pipeline] Could not download GMR cache for KIT/348/turn_right03_poses: 401 Client Error. (Request ID: Root=1-6a291c8a-74a0869d098294af5202aa19;3bba397c-7542-4089-ad79-6b420e2293ae)
+
+Cannot access gated repo for url https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz.
+Access to dataset amathislab/musclemimic-retargeted is restricted. You must have access to it and be authenticated to access it. Please log in.
+[2026-06-10 08:12:58,791][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Retargeting AMASS motion file using GMR ...
+[2026-06-10 08:12:58,793][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/348/turn_right03_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz
+[2026-06-10 08:12:58,939][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz "HTTP/1.1 401 Unauthorized"
+[2026-06-10 08:12:58,942][amass][WARNING] - [MuscleMimic AMASS Retargeting Pipeline] Could not download GMR cache for KIT/348/turn_right03_poses: 401 Client Error. (Request ID: Root=1-6a291c8a-365d574e26a362a42cafe4f7;a573c084-909e-4ec2-b89b-7dd35ece3e50)
+
+Cannot access gated repo for url https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz.
+Access to dataset amathislab/musclemimic-retargeted is restricted. You must have access to it and be authenticated to access it. Please log in.
+[2026-06-10 08:12:58,944][amass][ERROR] - [MuscleMimic AMASS Retargeting Pipeline] Skipping dataset 'KIT/348/turn_right03_poses' due to failure during retargeting: [LocoMuJoCo] Optional smpl dependencies not installed. Checkout the README for installation instructions. No module named 'joblib'
+[2026-06-10 08:12:58,945][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz
+[2026-06-10 08:12:59,074][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz "HTTP/1.1 401 Unauthorized"
+[2026-06-10 08:12:59,076][amass][WARNING] - [MuscleMimic AMASS Retargeting Pipeline] Could not download GMR cache for KIT/4/WalkInCounterClockwiseCircle04_poses: 401 Client Error. (Request ID: Root=1-6a291c8b-28db007078cc90494338b790;e143910c-3de4-480d-ae1f-9c9085def9da)
+
+Cannot access gated repo for url https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz.
+Access to dataset amathislab/musclemimic-retargeted is restricted. You must have access to it and be authenticated to access it. Please log in.
+[2026-06-10 08:12:59,077][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Retargeting AMASS motion file using GMR ...
+[2026-06-10 08:12:59,078][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz
+[2026-06-10 08:12:59,209][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz "HTTP/1.1 401 Unauthorized"
+[2026-06-10 08:12:59,213][amass][WARNING] - [MuscleMimic AMASS Retargeting Pipeline] Could not download GMR cache for KIT/4/WalkInCounterClockwiseCircle04_poses: 401 Client Error. (Request ID: Root=1-6a291c8b-508bf7d03ed42a490815efb3;6994d2df-77c0-45ec-8ced-e411f7fdf4a2)
+
+Cannot access gated repo for url https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz.
+Access to dataset amathislab/musclemimic-retargeted is restricted. You must have access to it and be authenticated to access it. Please log in.
+[2026-06-10 08:12:59,215][amass][ERROR] - [MuscleMimic AMASS Retargeting Pipeline] Skipping dataset 'KIT/4/WalkInCounterClockwiseCircle04_poses' due to failure during retargeting: [LocoMuJoCo] Optional smpl dependencies not installed. Checkout the README for installation instructions. No module named 'joblib'
+[2026-06-10 08:12:59,216][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 0 final MjxMyoFullBody trajectories ...
+Traceback (most recent call last):
+  File "/workspace/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/workspace/musclemimic/musclemimic/runner/engine.py", line 450, in run_experiment
+    env = instantiate_env(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/runner/engine.py", line 180, in instantiate_env
+    env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 121, in make
+    all_trajs.append(cls.get_amass_traj(env, amass_dataset_conf, visualize_goal=visualize_goal))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 271, in get_amass_traj
+    traj = load_retargeted_amass_trajectory(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/smpl/retargeting.py", line 1737, in load_retargeted_amass_trajectory
+    return _load_trajectories_individually(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/smpl/retargeting.py", line 1694, in _load_trajectories_individually
+    result_trajectory = Trajectory.concatenate(final_trajectories, backend=np)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/trajectory/dataclasses.py", line 103, in concatenate
+    traj_data, traj_info = TrajectoryData.concatenate(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/trajectory/dataclasses.py", line 1116, in concatenate
+    dtype = traj_datas[0].qpos.dtype
+            ~~~~~~~~~~^^^
+IndexError: list index out of range
+Error executing job with overrides: ['++experiment.env_params.mjx_backend=mjx', '++experiment.env_params.num_envs=8192', '++experiment.ppo_config.num_minibatches=128', '++experiment.ppo_config.total_timesteps=15000000']
+Traceback (most recent call last):
+  File "/workspace/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/workspace/musclemimic/musclemimic/runner/engine.py", line 450, in run_experiment
+    env = instantiate_env(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/musclemimic/runner/engine.py", line 180, in instantiate_env
+    env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 121, in make
+    all_trajs.append(cls.get_amass_traj(env, amass_dataset_conf, visualize_goal=visualize_goal))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 271, in get_amass_traj
+    traj = load_retargeted_amass_trajectory(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/smpl/retargeting.py", line 1737, in load_retargeted_amass_trajectory
+    return _load_trajectories_individually(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/smpl/retargeting.py", line 1694, in _load_trajectories_individually
+    result_trajectory = Trajectory.concatenate(final_trajectories, backend=np)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/trajectory/dataclasses.py", line 103, in concatenate
+    traj_data, traj_info = TrajectoryData.concatenate(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/musclemimic/loco_mujoco/trajectory/dataclasses.py", line 1116, in concatenate
+    dtype = traj_datas[0].qpos.dtype
+            ~~~~~~~~~~^^^
+IndexError: list index out of range
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

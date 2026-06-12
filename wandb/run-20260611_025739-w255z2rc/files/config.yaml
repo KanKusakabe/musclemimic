@@ -1,0 +1,329 @@
+_wandb:
+    value:
+        cli_version: 0.27.2
+        e:
+            37g5b8p1zaohlw3qndx6x9rjob6dzg04:
+                args:
+                    - --config-name=conf_fullbody_demo
+                    - ++experiment.env_params.mjx_backend=mjx
+                    - ++experiment.env_params.num_envs=8192
+                    - ++experiment.ppo_config.num_minibatches=128
+                    - ++experiment.ppo_config.total_timesteps=80000000
+                codePath: fullbody/experiment.py
+                codePathLocal: fullbody/experiment.py
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "42949672960"
+                        used: "724672512"
+                email: kusakabe.kan.v5@elms.hokudai.ac.jp
+                executable: /workspace/musclemimic/.venv/bin/python3
+                git:
+                    commit: 1332a9b029d18932c65c1f1b9f668296e1076ed9
+                    remote: git@github.com:KanKusakabe/musclemimic.git
+                gpu: NVIDIA RTX A6000
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-bf0432a7-afab-d041-7825-e21fa547deaa
+                host: 26ce88e04b33
+                memory:
+                    total: "540642619392"
+                os: Linux-6.8.0-60-generic-x86_64-with-glibc2.35
+                program: /workspace/musclemimic/fullbody/experiment.py
+                python: CPython 3.11.10
+                root: /workspace/musclemimic
+                startedAt: "2026-06-11T02:57:39.755237Z"
+                writerId: 37g5b8p1zaohlw3qndx6x9rjob6dzg04
+        m: []
+        python_version: 3.11.10
+        t:
+            "1":
+                - 12
+                - 45
+                - 49
+                - 50
+            "2":
+                - 12
+                - 45
+                - 49
+                - 50
+            "3":
+                - 15
+                - 16
+                - 41
+                - 61
+            "4": 3.11.10
+            "5": 0.27.2
+            "12": 0.27.2
+            "13": linux-x86_64
+control_config:
+    value:
+        torque_control:
+            control_type: DefaultControl
+experiment:
+    value:
+        activation: silu
+        actor_hidden_layers:
+            - 1024
+            - 1024
+            - 1024
+            - 1024
+            - 1024
+        adaptive_sampling:
+            alpha: 1
+            beta: 0.2
+            ema_done_init: 10
+            ema_early_init: 5
+            enabled: false
+            eps_div: 1e-06
+            eps_pow: 1e-06
+            floor_mix: 0.1
+        adaptive_termination:
+            adjust_factor: 0.95
+            consecutive_k: 5
+            ema_alpha: 0.1
+            enabled: false
+            high_band: 0.2
+            init_threshold: 0.5
+            low_band: 0.1
+            min_threshold: 0.1
+        algorithm: PPOJax
+        anneal_lr: true
+        async_checkpointing: false
+        auto_resume: true
+        checkpoint_root: null
+        checkpoints_on_validation: true
+        critic_hidden_layers:
+            - 1024
+            - 1024
+            - 1024
+            - 1024
+            - 1024
+        debug:
+            enabled: false
+            profile_traj_batch: false
+            profile_val_batch: false
+            track_nacon: false
+        env_params:
+            control_type: DefaultControl
+            disable_fingers: true
+            enable_muscle_activation_observations: true
+            enable_muscle_excitation_observations: true
+            enable_muscle_force_observations: true
+            enable_muscle_length_observations: true
+            enable_muscle_velocity_observations: true
+            enable_touch_sensor_observations: true
+            env_name: MjxMyoFullBody
+            goal_params:
+                enable_motion_phase: true
+                n_step_lookahead: 5
+                n_step_stride: 20
+                sites_for_mimic:
+                    - pelvis_mimic
+                    - upper_body_mimic
+                    - head_mimic
+                    - left_shoulder_mimic
+                    - left_elbow_mimic
+                    - left_hand_mimic
+                    - right_shoulder_mimic
+                    - right_elbow_mimic
+                    - right_hand_mimic
+                    - left_hip_mimic
+                    - left_knee_mimic
+                    - left_ankle_mimic
+                    - left_toes_mimic
+                    - right_hip_mimic
+                    - right_knee_mimic
+                    - right_ankle_mimic
+                    - right_toes_mimic
+                upper_body_xml_name: torso
+                use_concise_lookahead: true
+            goal_type: GoalTrajMimic
+            headless: true
+            horizon: 1000
+            init_state_type: TrajInitialStateHandler
+            mjx_backend: mjx
+            num_envs: 8192
+            reward_params:
+                action_rate_coeff: 0
+                activation_energy_coeff: 0
+                qpos_w_sum: 0.1
+                qvel_w_sum: 0.1
+                root_pos_w_sum: 0.1
+                root_vel_w_sum: 0.1
+                rpos_w_sum: 0.6
+                rquat_w_sum: 0.01
+                rvel_w_sum: 0.1
+                sites_for_mimic:
+                    - pelvis_mimic
+                    - upper_body_mimic
+                    - head_mimic
+                    - left_shoulder_mimic
+                    - left_elbow_mimic
+                    - left_hand_mimic
+                    - right_shoulder_mimic
+                    - right_elbow_mimic
+                    - right_hand_mimic
+                    - left_hip_mimic
+                    - left_knee_mimic
+                    - left_ankle_mimic
+                    - left_toes_mimic
+                    - right_hip_mimic
+                    - right_knee_mimic
+                    - right_ankle_mimic
+                    - right_toes_mimic
+                use_mean_exp_reward: false
+            reward_type: MimicReward
+            terminal_state_params:
+                enable_site_check: true
+                mean_site_deviation_threshold: 1
+                root_deviation_threshold: 1
+                root_orientation_threshold: 1
+            terminal_state_type: MeanRelativeSiteDeviationWithRootTerminalStateHandler
+        layernorm_eps: 1e-05
+        lr: 0.0004
+        lr_schedule_type: linear
+        max_checkpoints_to_keep: 10
+        max_grad_norm: 1
+        min_lr_ratio: 0.1
+        moe_config:
+            apply_moe_to: both
+            apply_moe_to_output: false
+            expert_hidden_ratio: 0.5
+            gate_init_std: 0.01
+            load_balance_loss_weight: 0.01
+            moe_at_layers:
+                - 3
+            num_experts: 16
+            temperature: 0.5
+        muon_config:
+            adaptive: false
+            beta: 0.95
+            nesterov: true
+            ns_steps: 5
+        n_seeds: 1
+        normalize_env: true
+        num_envs: 8192
+        optimizer_type: muon
+        ppo_config:
+            clip_eps: 0.2
+            clip_eps_vf: 0.2
+            ent_coef: 0
+            gae_lambda: 0.95
+            gamma: 0.99
+            init_std: 3
+            learnable_std: true
+            num_minibatches: 128
+            num_steps: 80
+            total_timesteps: 80000000
+            update_epochs: 1
+            vf_coef: 0.5
+        reset_logging_timestep: false
+        reset_lr_schedule_on_resume: false
+        resume_from: null
+        reward_curriculum:
+            consecutive_k: 5
+            ema_alpha: 0.2
+            enabled: false
+            eta: 0.02
+            qvel_w_sum_init: 0.1
+            qvel_w_sum_max: 0.4
+            root_vel_w_sum_init: 0.1
+            root_vel_w_sum_max: 0.4
+            term_rate_threshold: 0.08
+        run_id: null
+        save_checkpoints: true
+        seeds: null
+        task_factory:
+            name: ImitationFactory
+            params:
+                amass_dataset_conf:
+                    dataset_group: null
+                    gmr_config:
+                        damping: 0.5
+                        offset_to_ground: false
+                        shape_fitting_iterations: 500
+                        solver: daqp
+                        src_human: smplh
+                        target_fps: 30
+                        use_fitted_shape: true
+                        use_velocity_limit: false
+                    rel_dataset_path:
+                        - KIT/314/walking_medium09_poses
+                        - KIT/348/turn_right03_poses
+                        - KIT/4/WalkInCounterClockwiseCircle04_poses
+                    retargeting_method: gmr
+        total_timesteps: 2048000000
+        use_layernorm: true
+        use_moe: false
+        validation:
+            active: true
+            amass_dataset_conf:
+                dataset_group: null
+                gmr_config:
+                    damping: 0.5
+                    offset_to_ground: false
+                    shape_fitting_iterations: 500
+                    solver: daqp
+                    src_human: smplh
+                    target_fps: 30
+                    use_fitted_shape: true
+                    use_velocity_limit: false
+                rel_dataset_path:
+                    - KIT/314/walking_medium09_poses
+                    - KIT/348/turn_right03_poses
+                    - KIT/4/WalkInCounterClockwiseCircle04_poses
+                retargeting_method: gmr
+            deterministic: false
+            measures:
+                - EuclideanDistance
+            num: 100
+            num_envs: 100
+            num_steps: 500
+            quantities:
+                - JointPosition
+                - JointVelocity
+                - RelSitePosition
+                - RelSiteVelocity
+                - RelSiteOrientation
+            rel_site_names:
+                - pelvis_mimic
+                - upper_body_mimic
+                - head_mimic
+                - left_shoulder_mimic
+                - left_elbow_mimic
+                - left_hand_mimic
+                - right_shoulder_mimic
+                - right_elbow_mimic
+                - right_hand_mimic
+                - left_hip_mimic
+                - left_knee_mimic
+                - left_ankle_mimic
+                - left_toes_mimic
+                - right_hip_mimic
+                - right_knee_mimic
+                - right_ankle_mimic
+                - right_toes_mimic
+            terminal_state_params:
+                enable_site_check: true
+                mean_site_deviation_threshold: 0.5
+            terminal_state_type: MeanRelativeSiteDeviationTerminalStateHandler
+            video_frequency: 1
+            video_length: 3000
+        vmap_across_seeds: false
+        warmup_steps: null
+        weight_decay: 0
+wandb:
+    value:
+        mode: online
+        project: musclemimic
+        tags:
+            - fullbody
+            - demo
+            - gmr

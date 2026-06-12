@@ -1,0 +1,40 @@
+[2026-06-11 02:54:47,997][musclemimic.runner.engine][INFO] - [MuscleMimic] JAX compilation cache enabled at: /root/.musclemimic/.jax_cache
+[2026-06-11 02:54:58,883][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-11 02:55:02,179][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-11 02:55:02,181][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-11 02:55:02,182][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-11 02:55:02,182][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-11 02:55:02,183][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-11 02:55:02,184][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+[2026-06-11 02:55:06,711][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-11 02:55:08,256][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz
+[2026-06-11 02:55:08,494][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz "HTTP/1.1 302 Found"
+[2026-06-11 02:55:08,739][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/amathislab/musclemimic-retargeted/xet-read-token/25e0ed41f9ab8f08aac98ab3d9b120a63de1bd46 "HTTP/1.1 200 OK"
+[2026-06-11 02:55:09,808][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Downloaded GMR cache: /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz
+[2026-06-11 02:55:09,822][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-11 02:55:10,134][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/348/turn_right03_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz
+[2026-06-11 02:55:10,300][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz "HTTP/1.1 302 Found"
+[2026-06-11 02:55:11,805][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Downloaded GMR cache: /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz
+[2026-06-11 02:55:11,807][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-11 02:55:11,851][musclemimic.utils.gmr_cache][INFO] - [GMRCache] Downloading GMR cache MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz -> /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz
+[2026-06-11 02:55:11,995][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/amathislab/musclemimic-retargeted/resolve/main/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz "HTTP/1.1 302 Found"
+[2026-06-11 02:55:12,505][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Downloaded GMR cache: /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz
+[2026-06-11 02:55:12,507][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-11 02:55:12,543][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-11 02:55:12,568][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[2026-06-11 02:55:14,317][musclemimic.runner.engine][INFO] - [MuscleMimic] Using validation-specific amass_dataset_conf.
+[2026-06-11 02:55:16,607][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-11 02:55:16,622][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-11 02:55:16,635][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /root/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-11 02:55:16,651][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-11 02:55:16,661][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[2026-06-11 02:55:16,877][musclemimic.runner.engine][INFO] - [MuscleMimic] Using separate validation trajectory (share disabled or dataset override).
+[2026-06-11 02:55:16,901][musclemimic.algorithms.ppo.ppo][INFO] - [ppo] roll out size=655360, minibatch size=5120, grad_steps=128, utd=0.0002, sample_reuse=1x, unrolls/1M=1.5, grad_steps/1M=195.3
+[2026-06-11 02:55:16,951][musclemimic.runner.engine][INFO] - [MuscleMimic] [Train] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+[2026-06-11 02:55:16,952][musclemimic.runner.engine][INFO] - [MuscleMimic] [Validation] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+[2026-06-11 02:55:17,432][musclemimic.runner.engine][INFO] - [MuscleMimic] Auto-resume: no checkpoint in /workspace/musclemimic/checkpoints/754c49e8b435, starting fresh
+[2026-06-11 02:55:17,459][musclemimic.runner.engine][INFO] - [MuscleMimic] Checkpoint directory: /workspace/musclemimic/checkpoints/754c49e8b435
+[2026-06-11 02:55:17,460][musclemimic.runner.engine][INFO] - [MuscleMimic] Experiment ID (config hash): 754c49e8b435
+[2026-06-11 02:55:17,514][musclemimic.runner.engine][INFO] - [MuscleMimic] Starting training...
+[2026-06-11 02:56:10,722][asyncio][WARNING] - socket.send() raised exception.
+[2026-06-11 02:56:10,723][asyncio][WARNING] - socket.send() raised exception.
