@@ -1,0 +1,127 @@
+[2026-06-10 01:26:10,991][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-10 01:26:12,154][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-10 01:26:12,154][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-10 01:26:12,155][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-10 01:26:12,155][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-10 01:26:12,155][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-10 01:26:12,156][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+INFO:2026-06-10 01:26:12,979:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 01:26:12,979][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 01:26:13,399][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-10 01:26:13,470][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-10 01:26:13,481][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-10 01:26:13,494][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-10 01:26:13,501][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[2026-06-10 01:26:14,501][musclemimic.runner.engine][INFO] - [MuscleMimic] Using validation-specific amass_dataset_conf.
+[2026-06-10 01:26:15,451][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-10 01:26:15,457][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-10 01:26:15,462][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-10 01:26:15,469][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-10 01:26:15,476][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[2026-06-10 01:26:15,785][musclemimic.runner.engine][INFO] - [MuscleMimic] Using separate validation trajectory (share disabled or dataset override).
+[2026-06-10 01:26:15,797][musclemimic.algorithms.ppo.ppo][INFO] - [ppo] roll out size=163840, minibatch size=1280, grad_steps=128, utd=0.0008, sample_reuse=1x, unrolls/1M=6.1, grad_steps/1M=781.2
+[2026-06-10 01:26:15,818][musclemimic.runner.engine][INFO] - [MuscleMimic] [Train] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+[2026-06-10 01:26:15,818][musclemimic.runner.engine][INFO] - [MuscleMimic] [Validation] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+  Left arm sites: ['left_elbow_mimic', 'left_hand_mimic']
+  Right arm sites: ['right_elbow_mimic', 'right_hand_mimic']
+[2026-06-10 01:26:16,052][musclemimic.runner.engine][INFO] - [MuscleMimic] Auto-resume: no checkpoint in /home/kan86/Project/musclemimic/checkpoints/19b9b45f7004, starting fresh
+[2026-06-10 01:26:16,054][musclemimic.runner.engine][INFO] - [MuscleMimic] Checkpoint directory: /home/kan86/Project/musclemimic/checkpoints/19b9b45f7004
+[2026-06-10 01:26:16,054][musclemimic.runner.engine][INFO] - [MuscleMimic] Experiment ID (config hash): 19b9b45f7004
+[2026-06-10 01:26:16,078][musclemimic.runner.engine][INFO] - [MuscleMimic] Starting training...
+Trainable parameters: 13,735,621 (actor: 7,048,900, critic: 6,686,721, shared: 0)
+
+================================================================================
+Network Architecture:
+================================================================================
+
+Layer                                                   Shape                      Params
+-----------------------------------------------------------------------------------------
+actor/Dense_0/bias                                      (1024,)                     1,024
+actor/Dense_0/kernel                                    (2418, 1024)            2,476,032
+actor/Dense_1/bias                                      (1024,)                     1,024
+actor/Dense_1/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_2/bias                                      (1024,)                     1,024
+actor/Dense_2/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_3/bias                                      (1024,)                     1,024
+actor/Dense_3/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_4/bias                                      (1024,)                     1,024
+actor/Dense_4/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_5/bias                                      (354,)                        354
+actor/Dense_5/kernel                                    (1024, 354)               362,496
+actor/LayerNorm_0/bias                                  (1024,)                     1,024
+actor/LayerNorm_0/scale                                 (1024,)                     1,024
+actor/LayerNorm_1/bias                                  (1024,)                     1,024
+actor/LayerNorm_1/scale                                 (1024,)                     1,024
+actor/LayerNorm_2/bias                                  (1024,)                     1,024
+actor/LayerNorm_2/scale                                 (1024,)                     1,024
+actor/LayerNorm_3/bias                                  (1024,)                     1,024
+actor/LayerNorm_3/scale                                 (1024,)                     1,024
+actor/LayerNorm_4/bias                                  (1024,)                     1,024
+actor/LayerNorm_4/scale                                 (1024,)                     1,024
+critic/Dense_0/bias                                     (1024,)                     1,024
+critic/Dense_0/kernel                                   (2418, 1024)            2,476,032
+critic/Dense_1/bias                                     (1024,)                     1,024
+critic/Dense_1/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_2/bias                                     (1024,)                     1,024
+critic/Dense_2/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_3/bias                                     (1024,)                     1,024
+critic/Dense_3/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_4/bias                                     (1024,)                     1,024
+critic/Dense_4/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_5/bias                                     (1,)                            1
+critic/Dense_5/kernel                                   (1024, 1)                   1,024
+critic/LayerNorm_0/bias                                 (1024,)                     1,024
+critic/LayerNorm_0/scale                                (1024,)                     1,024
+critic/LayerNorm_1/bias                                 (1024,)                     1,024
+critic/LayerNorm_1/scale                                (1024,)                     1,024
+critic/LayerNorm_2/bias                                 (1024,)                     1,024
+critic/LayerNorm_2/scale                                (1024,)                     1,024
+critic/LayerNorm_3/bias                                 (1024,)                     1,024
+critic/LayerNorm_3/scale                                (1024,)                     1,024
+critic/LayerNorm_4/bias                                 (1024,)                     1,024
+critic/LayerNorm_4/scale                                (1024,)                     1,024
+log_std                                                 (354,)                        354
+-----------------------------------------------------------------------------------------
+Total                                                                          13,735,621
+================================================================================
+
+[2026-06-10 01:27:37,229][absl][INFO] - [thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+[2026-06-10 01:27:37,230][absl][INFO] - [process=0][thread=MainThread] CheckpointManager init: checkpointers=None, item_names=('train_state', 'config', 'metadata'), item_handlers=None, handler_registry=None
+[2026-06-10 01:27:37,230][absl][INFO] - Deferred registration for item: "metrics". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f178868d6d0>` for item "metrics" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`.
+[2026-06-10 01:27:37,231][absl][INFO] - Initialized registry DefaultCheckpointHandlerRegistry({('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f178868d6d0>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f178868d6d0>}).
+[2026-06-10 01:27:37,231][absl][INFO] - orbax-checkpoint version: 0.11.37
+[2026-06-10 01:27:37,232][absl][INFO] - Found 0 checkpoint steps in /home/kan86/Project/musclemimic/checkpoints/19b9b45f7004
+[2026-06-10 01:27:37,233][absl][INFO] - [process=0][thread=MainThread] CheckpointManager created,  primary_host=0, CheckpointManagerOptions=CheckpointManagerOptions(save_interval_steps=1, max_to_keep=10, keep_time_interval=None, keep_period=None, should_keep_fn=None, best_fn=None, best_mode='max', keep_checkpoints_without_metrics=True, step_prefix='checkpoint', step_format_fixed_length=None, step_name_format=None, create=True, cleanup_tmp_directories=False, save_on_steps=frozenset(), single_host_load_and_broadcast=False, todelete_subdir=None, todelete_full_path=None, enable_background_delete=False, read_only=False, enable_async_checkpointing=False, async_options=None, multiprocessing_options=MultiprocessingOptions(primary_host=0, active_processes=None, barrier_sync_key_prefix=None), should_save_fn=None, file_options=FileOptions(path_permission_mode=None), save_root_metadata=True, temporary_path_class=None, save_decision_policy=None, preservation_policy=None, prevent_write_metrics=False, enable_should_save_is_saving_in_progress_check=True, enable_per_process_directory_creation=False, lightweight_initialize=False), root_directory=/home/kan86/Project/musclemimic/checkpoints/19b9b45f7004: <orbax.checkpoint.checkpoint_manager.CheckpointManager object at 0x7f17b8532e90>
+Traceback (most recent call last):
+  File "/home/kan86/Project/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 566, in run_experiment
+    run_training(train_fn, rngs)
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 425, in run_training
+    return train_fn(rngs)
+           ^^^^^^^^^^^^^^
+jaxlib._jax.XlaRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 8472607056 bytes.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/kan86/Project/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 566, in run_experiment
+    run_training(train_fn, rngs)
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 425, in run_training
+    return train_fn(rngs)
+           ^^^^^^^^^^^^^^
+jaxlib._jax.XlaRuntimeError: RESOURCE_EXHAUSTED: Out of memory while trying to allocate 8472607056 bytes.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

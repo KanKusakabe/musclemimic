@@ -1,0 +1,66 @@
+[2026-06-10 00:28:50,487][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-10 00:28:51,142][musclemimic.environments.humanoids.myofullbody][INFO] - [MyoFullBody] nconmax=96 (per-env), naconmax=196608 (total), njmax=768
+[2026-06-10 00:28:51,143][musclemimic.environments.humanoids.myofullbody][INFO] - [MyoFullBody] Keeping all contacts enabled for Warp backend
+[2026-06-10 00:28:51,710][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-10 00:28:51,710][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+Warp 1.10.0 initialized:
+   CUDA driver not found or failed to initialize
+   Devices:
+     "cpu"      : "x86_64"
+   Kernel cache:
+     /home/kan86/.cache/warp/1.10.0
+Traceback (most recent call last):
+  File "/home/kan86/Project/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 450, in run_experiment
+    env = instantiate_env(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 180, in instantiate_env
+    env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 97, in make
+    env = env_cls(
+          ^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 574, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 133, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/base.py", line 103, in __init__
+    super(LocoEnv, self).__init__(**core_params)
+  File "/home/kan86/Project/musclemimic/musclemimic/core/mujoco_mjx.py", line 82, in __init__
+    backend_impl = self._get_mjx_backend()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/core/mujoco_mjx.py", line 150, in _get_mjx_backend
+    raise RuntimeError("Warp backend requested but CUDA not available. Warp requires CUDA.")
+RuntimeError: Warp backend requested but CUDA not available. Warp requires CUDA.
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/kan86/Project/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 450, in run_experiment
+    env = instantiate_env(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 180, in instantiate_env
+    env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 97, in make
+    env = env_cls(
+          ^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 574, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 133, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/base.py", line 103, in __init__
+    super(LocoEnv, self).__init__(**core_params)
+  File "/home/kan86/Project/musclemimic/musclemimic/core/mujoco_mjx.py", line 82, in __init__
+    backend_impl = self._get_mjx_backend()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/core/mujoco_mjx.py", line 150, in _get_mjx_backend
+    raise RuntimeError("Warp backend requested but CUDA not available. Warp requires CUDA.")
+RuntimeError: Warp backend requested but CUDA not available. Warp requires CUDA.
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

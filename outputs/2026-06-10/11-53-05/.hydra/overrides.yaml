@@ -1,0 +1,3 @@
+- ++experiment.env_params.num_envs=1024
+- ++experiment.ppo_config.num_minibatches=128
+- ++experiment.ppo_config.num_steps=10

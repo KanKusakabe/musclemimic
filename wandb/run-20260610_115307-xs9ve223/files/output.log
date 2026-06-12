@@ -1,0 +1,530 @@
+[2026-06-10 11:53:07,931][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-10 11:53:09,051][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-10 11:53:09,051][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-10 11:53:09,052][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-10 11:53:09,052][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-10 11:53:09,052][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-10 11:53:09,053][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+INFO:2026-06-10 11:53:09,183:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 11:53:09,183][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 11:53:09,673][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-10 11:53:09,707][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-10 11:53:09,713][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-10 11:53:09,722][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-10 11:53:09,728][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[2026-06-10 11:53:10,676][musclemimic.runner.engine][INFO] - [MuscleMimic] Using validation-specific amass_dataset_conf.
+[2026-06-10 11:53:11,629][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-10 11:53:11,635][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-10 11:53:11,641][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-10 11:53:11,647][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MjxMyoFullBody trajectories ...
+[2026-06-10 11:53:11,654][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[2026-06-10 11:53:11,997][musclemimic.runner.engine][INFO] - [MuscleMimic] Using separate validation trajectory (share disabled or dataset override).
+[2026-06-10 11:53:12,009][musclemimic.algorithms.ppo.ppo][INFO] - [ppo] roll out size=10240, minibatch size=80, grad_steps=128, utd=0.0125, sample_reuse=1x, unrolls/1M=97.7, grad_steps/1M=12500.0
+[2026-06-10 11:53:12,029][musclemimic.runner.engine][INFO] - [MuscleMimic] [Train] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+[2026-06-10 11:53:12,030][musclemimic.runner.engine][INFO] - [MuscleMimic] [Validation] total concatenated motion duration: 0.37 minutes (22.3 s, 2231 frames @ 100.0 Hz)
+  Left arm sites: ['left_elbow_mimic', 'left_hand_mimic']
+  Right arm sites: ['right_elbow_mimic', 'right_hand_mimic']
+[2026-06-10 11:53:12,273][musclemimic.runner.engine][INFO] - [MuscleMimic] Auto-resume: no checkpoint in /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7, starting fresh
+[2026-06-10 11:53:12,276][musclemimic.runner.engine][INFO] - [MuscleMimic] Checkpoint directory: /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7
+[2026-06-10 11:53:12,276][musclemimic.runner.engine][INFO] - [MuscleMimic] Experiment ID (config hash): d3f7970bcbb7
+[2026-06-10 11:53:12,298][musclemimic.runner.engine][INFO] - [MuscleMimic] Starting training...
+Trainable parameters: 13,735,621 (actor: 7,048,900, critic: 6,686,721, shared: 0)
+
+================================================================================
+Network Architecture:
+================================================================================
+
+Layer                                                   Shape                      Params
+-----------------------------------------------------------------------------------------
+actor/Dense_0/bias                                      (1024,)                     1,024
+actor/Dense_0/kernel                                    (2418, 1024)            2,476,032
+actor/Dense_1/bias                                      (1024,)                     1,024
+actor/Dense_1/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_2/bias                                      (1024,)                     1,024
+actor/Dense_2/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_3/bias                                      (1024,)                     1,024
+actor/Dense_3/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_4/bias                                      (1024,)                     1,024
+actor/Dense_4/kernel                                    (1024, 1024)            1,048,576
+actor/Dense_5/bias                                      (354,)                        354
+actor/Dense_5/kernel                                    (1024, 354)               362,496
+actor/LayerNorm_0/bias                                  (1024,)                     1,024
+actor/LayerNorm_0/scale                                 (1024,)                     1,024
+actor/LayerNorm_1/bias                                  (1024,)                     1,024
+actor/LayerNorm_1/scale                                 (1024,)                     1,024
+actor/LayerNorm_2/bias                                  (1024,)                     1,024
+actor/LayerNorm_2/scale                                 (1024,)                     1,024
+actor/LayerNorm_3/bias                                  (1024,)                     1,024
+actor/LayerNorm_3/scale                                 (1024,)                     1,024
+actor/LayerNorm_4/bias                                  (1024,)                     1,024
+actor/LayerNorm_4/scale                                 (1024,)                     1,024
+critic/Dense_0/bias                                     (1024,)                     1,024
+critic/Dense_0/kernel                                   (2418, 1024)            2,476,032
+critic/Dense_1/bias                                     (1024,)                     1,024
+critic/Dense_1/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_2/bias                                     (1024,)                     1,024
+critic/Dense_2/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_3/bias                                     (1024,)                     1,024
+critic/Dense_3/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_4/bias                                     (1024,)                     1,024
+critic/Dense_4/kernel                                   (1024, 1024)            1,048,576
+critic/Dense_5/bias                                     (1,)                            1
+critic/Dense_5/kernel                                   (1024, 1)                   1,024
+critic/LayerNorm_0/bias                                 (1024,)                     1,024
+critic/LayerNorm_0/scale                                (1024,)                     1,024
+critic/LayerNorm_1/bias                                 (1024,)                     1,024
+critic/LayerNorm_1/scale                                (1024,)                     1,024
+critic/LayerNorm_2/bias                                 (1024,)                     1,024
+critic/LayerNorm_2/scale                                (1024,)                     1,024
+critic/LayerNorm_3/bias                                 (1024,)                     1,024
+critic/LayerNorm_3/scale                                (1024,)                     1,024
+critic/LayerNorm_4/bias                                 (1024,)                     1,024
+critic/LayerNorm_4/scale                                (1024,)                     1,024
+log_std                                                 (354,)                        354
+-----------------------------------------------------------------------------------------
+Total                                                                          13,735,621
+================================================================================
+
+[2026-06-10 11:54:36,806][absl][INFO] - [thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+[2026-06-10 11:54:36,806][absl][INFO] - [process=0][thread=MainThread] CheckpointManager init: checkpointers=None, item_names=('train_state', 'config', 'metadata'), item_handlers=None, handler_registry=None
+[2026-06-10 11:54:36,806][absl][INFO] - Deferred registration for item: "metrics". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f8f982d06d0>` for item "metrics" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`.
+[2026-06-10 11:54:36,807][absl][INFO] - Initialized registry DefaultCheckpointHandlerRegistry({('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f8f982d06d0>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f8f982d06d0>}).
+[2026-06-10 11:54:36,807][absl][INFO] - orbax-checkpoint version: 0.11.37
+[2026-06-10 11:54:36,808][absl][INFO] - Found 0 checkpoint steps in /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7
+[2026-06-10 11:54:36,808][absl][INFO] - [process=0][thread=MainThread] CheckpointManager created,  primary_host=0, CheckpointManagerOptions=CheckpointManagerOptions(save_interval_steps=1, max_to_keep=10, keep_time_interval=None, keep_period=None, should_keep_fn=None, best_fn=None, best_mode='max', keep_checkpoints_without_metrics=True, step_prefix='checkpoint', step_format_fixed_length=None, step_name_format=None, create=True, cleanup_tmp_directories=False, save_on_steps=frozenset(), single_host_load_and_broadcast=False, todelete_subdir=None, todelete_full_path=None, enable_background_delete=False, read_only=False, enable_async_checkpointing=False, async_options=None, multiprocessing_options=MultiprocessingOptions(primary_host=0, active_processes=None, barrier_sync_key_prefix=None), should_save_fn=None, file_options=FileOptions(path_permission_mode=None), save_root_metadata=True, temporary_path_class=None, save_decision_policy=None, preservation_policy=None, prevent_write_metrics=False, enable_should_save_is_saving_in_progress_check=True, enable_per_process_directory_creation=False, lightweight_initialize=False), root_directory=/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7: <orbax.checkpoint.checkpoint_manager.CheckpointManager object at 0x7f90d81f0b50>
+[2026-06-10 15:44:51,607][absl][INFO] - [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning.
+[2026-06-10 15:44:51,611][absl][INFO] - [process=0] Saving checkpoint at step 2000
+[2026-06-10 15:44:51,612][absl][INFO] - [process=0] [sync] Started save checkpoint @ /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.
+[2026-06-10 15:44:51,616][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp
+[2026-06-10 15:44:51,622][absl][INFO] - Wrote Metadata={'item_handlers': None, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1781073891620084943, 'commit_timestamp_nsecs': None, 'custom_metadata': {}}, json={"item_handlers": null, "metrics": {}, "performance_metrics": {}, "init_timestamp_nsecs": 1781073891620084943, "commit_timestamp_nsecs": null, "custom_metadata": {}} to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/_CHECKPOINT_METADATA
+[2026-06-10 15:44:51,624][absl][INFO] - Using ThreadSafeKeyValueSignalingClient
+[2026-06-10 15:44:51,625][absl][INFO] - [process=0][thread=MainThread][operation_id=1] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 15:44:51,626][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/config.orbax-checkpoint-tmp
+[2026-06-10 15:44:51,626][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/metadata.orbax-checkpoint-tmp
+[2026-06-10 15:44:51,627][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp
+[2026-06-10 15:44:51,629][absl][INFO] - No entry found in handler registry for item: config and args with type: <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>. Falling back to global handler registry.
+[2026-06-10 15:44:51,629][absl][INFO] - Deferred registration for item: "config". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f904c1cb1d0>` for item "config" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`.
+[2026-06-10 15:44:51,630][absl][INFO] - No entry found in handler registry for item: metadata and args with type: <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>. Falling back to global handler registry.
+[2026-06-10 15:44:51,630][absl][INFO] - Deferred registration for item: "metadata". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x7f91f8812590>` for item "metadata" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`.
+[2026-06-10 15:44:51,630][absl][INFO] - No entry found in handler registry for item: train_state and args with type: <class 'orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardSaveArgs'>. Falling back to global handler registry.
+[2026-06-10 15:44:51,631][absl][INFO] - save_device_host_concurrent_bytes=None
+[2026-06-10 15:44:51,631][absl][INFO] - Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f91fc43bb10>, enable_pinned_host_transfer=True, save_concurrent_bytes: 96000000000 (89.4 GiB), restore_concurrent_bytes: 96000000000 (89.4 GiB)
+[2026-06-10 15:44:51,632][absl][INFO] - Deferred registration for item: "train_state". Adding handler `<orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardCheckpointHandler object at 0x7f8ed66f33d0>` for item "train_state" and save args `<class 'orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardRestoreArgs'>` to `_handler_registry`.
+[2026-06-10 15:44:51,658][absl][INFO] - Scheduling D2H of 134 prioritized jax.Array.
+[2026-06-10 15:44:51,664][absl][INFO] - Transferring arrays to host memory with options: use_replica_parallel=True, min_slice_bytes_for_replica_parallel=None, max_replicas_for_replica_parallel=None, enable_pinned_host_transfer=True
+[2026-06-10 15:44:51,729][absl][INFO] - [process=0][thread=MainThread] Initiated "orbax.checkpoint._src.serialization.jax_array_handlers.ArrayHandler".serialize. Time taken: 0.072829s
+[2026-06-10 15:44:51,752][absl][INFO] - [process=0][thread=MainThread] Initiated "orbax.checkpoint._src.serialization.type_handlers.ScalarHandler".serialize. Time taken: 0.007516s
+[2026-06-10 15:44:51,753][absl][INFO] - MemoryRegulated: Peak usage: 0.000000 GiB
+[2026-06-10 15:44:51,755][absl][INFO] - [process=0] /jax/orbax/write/blocking_gbytes_per_sec: 867.999 MiB/s (total gbytes: 104.9 MiB) (time elapsed: 0.12089061737060547 s) (per-host)
+[2026-06-10 15:44:51,756][absl][INFO] - [process=0][thread=MainThread] Initiated Pytree async_save. Time taken: 0.121469s (batch_requests_ready=0.015257s, total_serialization_initiated=0.105056s, others=0.001156s)
+[2026-06-10 15:44:51,757][absl][INFO] - [process=0][thread=MainThread] Initiated CompositeCheckpointHandler.async_save. Time taken: 0.133640s (all_items=0.002865s, per_item={'config': '0.00076699', 'metadata': '0.00035906', 'train_state': '0.00173879'}, temp_paths=0.130775)
+[2026-06-10 15:44:51,758][absl][INFO] - [process=0][thread=MainThread][operation_id=1] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 15:44:51,758][absl][INFO] - [process=0][thread=MainThread][operation_id=1] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 15:44:51,758][absl][INFO] - [process=0][thread=MainThread][operation_id=1] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 15:44:51,775][absl][INFO] - [process=0][thread=array_type_handler] Wrote 134 array_metadata.ArrayMetadata to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp/array_metadatas/process_0
+[2026-06-10 15:44:52,132][absl][INFO] - [process=0][thread=write_metadata_after_commits] Commit + Array metadata written. Time taken: 0.375669s (commit=0.366345s, array_metadata_write=0.009324s)
+[2026-06-10 15:44:52,133][absl][INFO] - [process=0] /jax/orbax/write/gbytes_per_sec: 210.447 MiB/s (total gbytes: 104.9 MiB) (time elapsed: 0.49861884117126465 s) (per-host)
+[2026-06-10 15:44:52,134][absl][INFO] - Read Metadata={'item_handlers': None, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1781073891620084943, 'commit_timestamp_nsecs': None, 'custom_metadata': {}} from /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/_CHECKPOINT_METADATA
+[2026-06-10 15:44:52,135][absl][INFO] - Updated Metadata={'item_handlers': {'config': 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler', 'metadata': 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler', 'train_state': 'orbax.checkpoint._src.handlers.standard_checkpoint_handler.StandardCheckpointHandler'}, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1781073891620084943, 'commit_timestamp_nsecs': None, 'custom_metadata': {}} to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/_CHECKPOINT_METADATA
+[2026-06-10 15:44:52,135][absl][INFO] - [process=0] [sync] Finished blocking save in 0.52 seconds. Continuing save @ /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.
+[2026-06-10 15:44:52,136][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/config.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/config
+[2026-06-10 15:44:52,138][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/metadata.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/metadata
+[2026-06-10 15:44:52,142][absl][INFO] - [process=0][thread=MainThread] Skipped cross-host ArrayMetadata validation because only one process is found: process_index=0.
+[2026-06-10 15:44:52,149][absl][INFO] - [process=0][thread=MainThread] Pytree save finalize (merge_ocdbt + ArrayMetadata validation) completed. Time taken: 0.009912s. use_zarr3=False, enable_post_merge_validation=True, directory=/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp
+[2026-06-10 15:44:52,150][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp/train_state
+[2026-06-10 15:44:52,150][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000
+[2026-06-10 15:44:52,151][absl][INFO] - [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000`.
+[2026-06-10 15:44:52,152][absl][INFO] - [process=0] [sync] Finished save in 0.54 seconds @ /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000
+[2026-06-10 15:44:52,153][absl][INFO] - [process=0][thread=MainThread][step=2000] CheckpointManager Save Finalize is syncing with other hosts...
+[2026-06-10 15:44:52,153][absl][INFO] - [process=0][thread=MainThread][step=2000] CheckpointManager Save Finalize is done on all hosts.
+[2026-06-10 15:44:52,153][absl][INFO] - [process=0][thread=MainThread][step=2000] Finished synchronous save.
+[2026-06-10 15:44:52,154][absl][INFO] - {'step': 2000, 'event_type': 'save', 'directory': '/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7', 'reached_preemption': False, 'preemption_received_at': None, 'synchronous': True, 'wait_for_prev_start_time': 1781073891.6077588, 'wait_for_prev_duration_secs': 0.002870321273803711, 'time_between_consecutive_saves_sec': None, 'checkpointer_blocking_start_time': 1781073891.6122181, 'checkpointer_blocking_duration_secs': 0.5405685901641846, 'get_old_steps_start_time': 1781073892.1527946, 'get_old_steps_duration_secs': 0.0003592967987060547, 'checkpoint_manager_blocking_start_time': 1781073891.6059515, 'checkpoint_manager_blocking_duration_secs': 0.5481922626495361}
+[2026-06-10 15:44:52,154][absl][INFO] - [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning.
+[2026-06-10 15:44:52,154][musclemimic.algorithms.common.checkpoint_hooks][INFO] - [MuscleMimic] Saved checkpoint (sync) at update 2000: /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_2000
+[2026-06-10 15:44:52,154][musclemimic.algorithms.common.checkpoint_hooks][INFO] - [MuscleMimic]   Global timestep: 20,480,000
+[2026-06-10 15:45:45,855][musclemimic.runner.engine][INFO] - [MuscleMimic] Combined sweep metric: 3.1185
+No display detected - enabling headless rendering with EGL
+   Set MUJOCO_GL=egl for headless rendering
+[ValidationVideo] Building eval env for recording (tag=validation_1_t20480000_20260610_154545)...
+[Visualization] Building trajectories for env=MyoFullBody with 3 paths.
+[2026-06-10 15:45:48,962][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-10 15:45:49,083][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-10 15:45:49,106][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-10 15:45:49,142][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MyoFullBody trajectories ...
+[2026-06-10 15:45:49,153][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[ValidationVideo] Eval env ready; starting rollout for 3000 steps @ 100 fps
+[2026-06-10 15:45:50,413][OpenGL.acceleratesupport][INFO] - No OpenGL_accelerate module loaded: No module named 'OpenGL_accelerate'
+
+--- Episode 1 DONE | steps=38, reward=39.03 ---
+  trajectory: #0, step 772/773 (100%)
+  rewards: qpos=0.462, qvel=0.529, root_pos=0.995, root_vel=0.198, rpos=0.917, rquat=0.589, rvel_lin=0.998, rvel_rot=0.903, total=0.986
+  penalties: activation_energy=0.000, total=-0.051
+  errors: joint_pos=0.1384, joint_vel=0.5742, root_xyz=0.0221, root_yaw=0.0419, rpos=0.0295, site_abs=0.0478
+
+--- Episode 2 DONE | steps=31, reward=31.50 ---
+  trajectory: #2, step 839/840 (100%)
+  rewards: qpos=0.280, qvel=0.510, root_pos=0.992, root_vel=0.345, rpos=0.930, rquat=0.769, rvel_lin=0.999, rvel_rot=0.862, total=0.999
+  penalties: activation_energy=0.000, total=-0.051
+  errors: joint_pos=0.1300, joint_vel=0.5945, root_xyz=0.0280, root_yaw=0.0079, rpos=0.0269, site_abs=0.0520
+
+--- Episode 3 DONE | steps=104, reward=54.82 ---
+  trajectory: #2, step 377/840 (45%)
+  rewards: qpos=0.000, qvel=0.000, root_pos=0.037, root_vel=0.000, rpos=0.000, rquat=0.032, rvel_lin=0.905, rvel_rot=0.209, total=0.072
+  penalties: activation_energy=0.000, total=-0.043
+  errors: joint_pos=0.3557, joint_vel=3.0301, root_xyz=0.5744, root_yaw=0.1245, rpos=0.3845, site_abs=0.9286
+
+--- Episode 4 DONE | steps=40, reward=41.31 ---
+  trajectory: #0, step 772/773 (100%)
+  rewards: qpos=0.472, qvel=0.536, root_pos=0.990, root_vel=0.272, rpos=0.867, rquat=0.733, rvel_lin=0.998, rvel_rot=0.918, total=0.973
+  penalties: activation_energy=0.000, total=-0.054
+  errors: joint_pos=0.1449, joint_vel=0.5705, root_xyz=0.0311, root_yaw=0.0206, rpos=0.0378, site_abs=0.0619
+
+--- Episode 5 DONE | steps=103, reward=90.42 ---
+  trajectory: #2, step 839/840 (100%)
+  rewards: qpos=0.008, qvel=0.599, root_pos=0.819, root_vel=0.084, rpos=0.320, rquat=0.265, rvel_lin=0.994, rvel_rot=0.894, total=0.566
+  penalties: activation_energy=0.000, total=-0.036
+  errors: joint_pos=0.2838, joint_vel=0.5066, root_xyz=0.1414, root_yaw=0.3637, rpos=0.1067, site_abs=0.2031
+
+--- Episode 6 DONE | steps=57, reward=55.09 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.111, qvel=0.335, root_pos=0.963, root_vel=0.070, rpos=0.691, rquat=0.547, rvel_lin=0.996, rvel_rot=0.747, total=0.745
+  penalties: activation_energy=0.000, total=-0.038
+  errors: joint_pos=0.2347, joint_vel=0.7531, root_xyz=0.0616, root_yaw=0.1076, rpos=0.0608, site_abs=0.1119
+
+--- Episode 7 DONE | steps=105, reward=51.91 ---
+  trajectory: #0, step 617/773 (80%)
+  rewards: qpos=0.000, qvel=0.100, root_pos=0.166, root_vel=0.000, rpos=0.000, rquat=0.086, rvel_lin=0.903, rvel_rot=0.604, total=0.152
+  penalties: activation_energy=0.000, total=-0.036
+  errors: joint_pos=0.3917, joint_vel=1.0038, root_xyz=0.4235, root_yaw=0.3941, rpos=0.3456, site_abs=0.7457
+
+--- Episode 8 DONE | steps=122, reward=57.16 ---
+  trajectory: #1, step 517/618 (84%)
+  rewards: qpos=0.000, qvel=0.043, root_pos=0.013, root_vel=0.000, rpos=0.000, rquat=0.006, rvel_lin=0.883, rvel_rot=0.485, total=0.113
+  penalties: activation_energy=0.000, total=-0.034
+  errors: joint_pos=0.3325, joint_vel=1.2099, root_xyz=0.6600, root_yaw=1.4509, rpos=0.3441, site_abs=1.0179
+
+--- Episode 9 DONE | steps=129, reward=50.28 ---
+  trajectory: #1, step 426/618 (69%)
+  rewards: qpos=0.000, qvel=0.201, root_pos=0.255, root_vel=0.000, rpos=0.000, rquat=0.018, rvel_lin=0.930, rvel_rot=0.610, total=0.184
+  penalties: activation_energy=0.000, total=-0.036
+  errors: joint_pos=0.4571, joint_vel=0.8139, root_xyz=0.3696, root_yaw=1.7731, rpos=0.3262, site_abs=0.7224
+
+--- Episode 10 DONE | steps=112, reward=48.24 ---
+  trajectory: #2, step 321/840 (38%)
+  rewards: qpos=0.000, qvel=0.026, root_pos=0.235, root_vel=0.000, rpos=0.000, rquat=0.233, rvel_lin=0.928, rvel_rot=0.659, total=0.147
+  penalties: activation_energy=0.000, total=-0.043
+  errors: joint_pos=0.2782, joint_vel=1.3571, root_xyz=0.3804, root_yaw=0.2194, rpos=0.3495, site_abs=0.7320
+
+--- Episode 11 DONE | steps=8, reward=8.75 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.808, qvel=0.374, root_pos=1.000, root_vel=0.355, rpos=0.990, rquat=0.972, rvel_lin=0.997, rvel_rot=0.838, total=1.053
+  penalties: activation_energy=0.000, total=-0.061
+  errors: joint_pos=0.0404, joint_vel=0.7216, root_xyz=0.0054, root_yaw=0.0023, rpos=0.0098, site_abs=0.0134
+
+--- Episode 12 DONE | steps=89, reward=38.48 ---
+  trajectory: #1, step 510/618 (83%)
+  rewards: qpos=0.000, qvel=0.000, root_pos=0.068, root_vel=0.000, rpos=0.000, rquat=0.080, rvel_lin=0.905, rvel_rot=0.104, total=0.074
+  penalties: activation_energy=0.000, total=-0.035
+  errors: joint_pos=0.3129, joint_vel=3.0787, root_xyz=0.5180, root_yaw=0.2616, rpos=0.3687, site_abs=0.8010
+
+--- Episode 13 DONE | steps=117, reward=60.61 ---
+  trajectory: #2, step 767/840 (91%)
+  rewards: qpos=0.000, qvel=0.194, root_pos=0.058, root_vel=0.000, rpos=0.000, rquat=0.126, rvel_lin=0.930, rvel_rot=0.518, total=0.157
+  penalties: activation_energy=0.000, total=-0.033
+  errors: joint_pos=0.3799, joint_vel=0.8072, root_xyz=0.5343, root_yaw=0.7843, rpos=0.3669, site_abs=0.8372
+
+--- Episode 14 DONE | steps=108, reward=46.02 ---
+  trajectory: #2, step 625/840 (74%)
+  rewards: qpos=0.000, qvel=0.003, root_pos=0.110, root_vel=0.000, rpos=0.000, rquat=0.052, rvel_lin=0.947, rvel_rot=0.492, total=0.121
+  penalties: activation_energy=0.000, total=-0.035
+  errors: joint_pos=0.3680, joint_vel=1.7347, root_xyz=0.4698, root_yaw=0.5083, rpos=0.3462, site_abs=0.8293
+
+--- Episode 15 DONE | steps=103, reward=53.04 ---
+  trajectory: #0, step 617/773 (80%)
+  rewards: qpos=0.000, qvel=0.000, root_pos=0.097, root_vel=0.000, rpos=0.000, rquat=0.062, rvel_lin=0.911, rvel_rot=0.111, total=0.082
+  penalties: activation_energy=0.000, total=-0.031
+  errors: joint_pos=0.3794, joint_vel=2.5997, root_xyz=0.4829, root_yaw=1.1686, rpos=0.3550, site_abs=0.7875
+
+--- Episode 16 DONE | steps=112, reward=53.94 ---
+  trajectory: #1, step 546/618 (88%)
+  rewards: qpos=0.000, qvel=0.001, root_pos=0.058, root_vel=0.000, rpos=0.000, rquat=0.036, rvel_lin=0.960, rvel_rot=0.535, total=0.124
+  penalties: activation_energy=0.000, total=-0.032
+  errors: joint_pos=0.2867, joint_vel=1.8816, root_xyz=0.5330, root_yaw=0.2136, rpos=0.3659, site_abs=0.7945
+
+--- Episode 17 DONE | steps=129, reward=73.18 ---
+  trajectory: #2, step 252/840 (30%)
+  rewards: qpos=0.000, qvel=0.189, root_pos=0.087, root_vel=0.000, rpos=0.000, rquat=0.168, rvel_lin=0.896, rvel_rot=0.470, total=0.147
+  penalties: activation_energy=0.000, total=-0.038
+  errors: joint_pos=0.2648, joint_vel=0.8534, root_xyz=0.4943, root_yaw=1.3341, rpos=0.3415, site_abs=0.9265
+
+--- Episode 18 DONE | steps=158, reward=114.62 ---
+  trajectory: #0, step 276/773 (36%)
+  rewards: qpos=0.000, qvel=0.311, root_pos=0.046, root_vel=0.000, rpos=0.000, rquat=0.002, rvel_lin=0.920, rvel_rot=0.703, total=0.201
+  penalties: activation_energy=0.000, total=-0.028
+  errors: joint_pos=0.4275, joint_vel=0.6384, root_xyz=0.5542, root_yaw=0.5698, rpos=0.3419, site_abs=0.7425
+
+--- Episode 19 DONE | steps=180, reward=124.85 ---
+  trajectory: #0, step 238/773 (31%)
+  rewards: qpos=0.000, qvel=0.105, root_pos=0.112, root_vel=0.000, rpos=0.000, rquat=0.000, rvel_lin=0.939, rvel_rot=0.651, total=0.156
+  penalties: activation_energy=0.000, total=-0.035
+  errors: joint_pos=0.4259, joint_vel=1.0445, root_xyz=0.4680, root_yaw=0.1654, rpos=0.3352, site_abs=0.6813
+
+--- Episode 20 DONE | steps=138, reward=95.18 ---
+  trajectory: #1, step 206/618 (33%)
+  rewards: qpos=0.000, qvel=0.311, root_pos=0.574, root_vel=0.000, rpos=0.000, rquat=0.028, rvel_lin=0.853, rvel_rot=0.546, total=0.226
+  penalties: activation_energy=0.000, total=-0.034
+  errors: joint_pos=0.3374, joint_vel=0.6125, root_xyz=0.2356, root_yaw=0.5082, rpos=0.3481, site_abs=0.5756
+
+--- Episode 21 DONE | steps=90, reward=39.31 ---
+  trajectory: #1, step 379/618 (61%)
+  rewards: qpos=0.000, qvel=0.076, root_pos=0.162, root_vel=0.000, rpos=0.000, rquat=0.001, rvel_lin=0.958, rvel_rot=0.613, total=0.150
+  penalties: activation_energy=0.000, total=-0.038
+  errors: joint_pos=0.5174, joint_vel=1.1441, root_xyz=0.4264, root_yaw=2.9448, rpos=0.3250, site_abs=0.6945
+
+--- Episode 22 DONE | steps=124, reward=56.06 ---
+  trajectory: #1, step 500/618 (81%)
+  rewards: qpos=0.000, qvel=0.079, root_pos=0.001, root_vel=0.000, rpos=0.000, rquat=0.004, rvel_lin=0.954, rvel_rot=0.767, total=0.148
+  penalties: activation_energy=0.000, total=-0.040
+  errors: joint_pos=0.5082, joint_vel=1.1021, root_xyz=0.8138, root_yaw=1.7077, rpos=0.3313, site_abs=1.2557
+
+--- Episode 23 DONE | steps=88, reward=86.31 ---
+  trajectory: #0, step 772/773 (100%)
+  rewards: qpos=0.015, qvel=0.485, root_pos=0.936, root_vel=0.606, rpos=0.507, rquat=0.415, rvel_lin=0.993, rvel_rot=0.927, total=0.777
+  penalties: activation_energy=0.000, total=-0.036
+  errors: joint_pos=0.1736, joint_vel=0.6206, root_xyz=0.0815, root_yaw=0.3298, rpos=0.0824, site_abs=0.1567
+
+--- Episode 24 DONE | steps=113, reward=44.56 ---
+  trajectory: #2, step 348/840 (41%)
+  rewards: qpos=0.000, qvel=0.008, root_pos=0.001, root_vel=0.012, rpos=0.000, rquat=0.000, rvel_lin=0.936, rvel_rot=0.539, total=0.118
+  penalties: activation_energy=0.000, total=-0.033
+  errors: joint_pos=0.4500, joint_vel=1.5996, root_xyz=0.8198, root_yaw=0.1727, rpos=0.3589, site_abs=1.2447
+
+--- Episode 25 DONE | steps=149, reward=62.59 ---
+  trajectory: #1, step 345/618 (56%)
+  rewards: qpos=0.000, qvel=0.141, root_pos=0.070, root_vel=0.000, rpos=0.000, rquat=0.006, rvel_lin=0.956, rvel_rot=0.664, total=0.159
+  penalties: activation_energy=0.000, total=-0.038
+  errors: joint_pos=0.4628, joint_vel=0.9015, root_xyz=0.5162, root_yaw=1.2326, rpos=0.3367, site_abs=1.0513
+
+--- Episode 26 DONE | steps=86, reward=73.03 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.015, qvel=0.219, root_pos=0.790, root_vel=0.002, rpos=0.236, rquat=0.175, rvel_lin=0.988, rvel_rot=0.785, total=0.410
+  penalties: activation_energy=0.000, total=-0.035
+  errors: joint_pos=0.3805, joint_vel=0.8776, root_xyz=0.1534, root_yaw=0.0492, rpos=0.1202, site_abs=0.2389
+
+--- Episode 27 DONE | steps=118, reward=59.98 ---
+  trajectory: #2, step 768/840 (91%)
+  rewards: qpos=0.000, qvel=0.251, root_pos=0.067, root_vel=0.000, rpos=0.000, rquat=0.128, rvel_lin=0.941, rvel_rot=0.651, total=0.187
+  penalties: activation_energy=0.000, total=-0.031
+  errors: joint_pos=0.3301, joint_vel=0.7447, root_xyz=0.5203, root_yaw=0.6230, rpos=0.3687, site_abs=0.8188
+
+--- Episode 28 DONE | steps=183, reward=139.08 ---
+  trajectory: #0, step 242/773 (31%)
+  rewards: qpos=0.000, qvel=0.535, root_pos=0.125, root_vel=0.000, rpos=0.000, rquat=0.061, rvel_lin=0.924, rvel_rot=0.785, total=0.256
+  penalties: activation_energy=0.000, total=-0.035
+  errors: joint_pos=0.3204, joint_vel=0.3915, root_xyz=0.4562, root_yaw=0.6241, rpos=0.3353, site_abs=0.7654
+[2026-06-10 17:11:25,758][musclemimic.runner.engine][WARNING] - [MuscleMimic] Video recording failed: [Errno 2] No such file or directory: 'ffmpeg'
+[2026-06-10 20:40:58,185][absl][INFO] - [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning.
+[2026-06-10 20:40:58,186][absl][INFO] - [process=0] Saving checkpoint at step 4000
+[2026-06-10 20:40:58,186][absl][INFO] - [process=0] [sync] Started save checkpoint @ /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.
+[2026-06-10 20:40:58,187][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp
+[2026-06-10 20:40:58,189][absl][INFO] - [process=0][thread=MainThread][operation_id=2] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 20:40:58,258][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/config.orbax-checkpoint-tmp
+[2026-06-10 20:40:58,259][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/metadata.orbax-checkpoint-tmp
+[2026-06-10 20:40:58,259][absl][INFO] - Creating tmp directory /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp
+[2026-06-10 20:40:58,271][absl][INFO] - Scheduling D2H of 134 prioritized jax.Array.
+[2026-06-10 20:40:58,272][absl][INFO] - Transferring arrays to host memory with options: use_replica_parallel=True, min_slice_bytes_for_replica_parallel=None, max_replicas_for_replica_parallel=None, enable_pinned_host_transfer=True
+[2026-06-10 20:40:58,329][absl][INFO] - [process=0][thread=MainThread] Initiated "orbax.checkpoint._src.serialization.jax_array_handlers.ArrayHandler".serialize. Time taken: 0.058277s
+[2026-06-10 20:40:58,346][absl][INFO] - [process=0][thread=MainThread] Initiated "orbax.checkpoint._src.serialization.type_handlers.ScalarHandler".serialize. Time taken: 0.002237s
+[2026-06-10 20:40:58,350][absl][INFO] - MemoryRegulated: Peak usage: 0.000000 GiB
+[2026-06-10 20:40:58,352][absl][INFO] - [process=0] /jax/orbax/write/blocking_gbytes_per_sec: 1.140 GiB/s (total gbytes: 104.9 MiB) (time elapsed: 0.08988618850708008 s) (per-host)
+[2026-06-10 20:40:58,352][absl][INFO] - [process=0][thread=MainThread] Initiated Pytree async_save. Time taken: 0.090571s (batch_requests_ready=0.004971s, total_serialization_initiated=0.084553s, others=0.001047s)
+[2026-06-10 20:40:58,353][absl][INFO] - [process=0][thread=MainThread] Initiated CompositeCheckpointHandler.async_save. Time taken: 0.164384s (all_items=0.000022s, per_item={'config': '0.00001526', 'metadata': '0.00000191', 'train_state': '0.00000453'}, temp_paths=0.164362)
+[2026-06-10 20:40:58,355][absl][INFO] - [process=0][thread=MainThread][operation_id=2] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 20:40:58,356][absl][INFO] - [process=0][thread=MainThread][operation_id=2] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 20:40:58,358][absl][INFO] - [process=0][thread=MainThread][operation_id=2] _SignalingThread.join() waiting for signals ([]) blocking the main thread will slow down blocking save times. This is likely due to main thread calling result() on a CommitFuture.
+[2026-06-10 20:40:58,361][absl][INFO] - [process=0][thread=array_type_handler] Wrote 134 array_metadata.ArrayMetadata to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp/array_metadatas/process_0
+[2026-06-10 20:40:58,578][absl][INFO] - [process=0][thread=write_metadata_after_commits] Commit + Array metadata written. Time taken: 0.226186s (commit=0.220772s, array_metadata_write=0.005414s)
+[2026-06-10 20:40:58,580][absl][INFO] - [process=0] /jax/orbax/write/gbytes_per_sec: 330.261 MiB/s (total gbytes: 104.9 MiB) (time elapsed: 0.31772708892822266 s) (per-host)
+[2026-06-10 20:40:58,582][absl][INFO] - [process=0] [sync] Finished blocking save in 0.40 seconds. Continuing save @ /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.
+[2026-06-10 20:40:58,582][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/config.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/config
+[2026-06-10 20:40:58,583][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/metadata.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/metadata
+[2026-06-10 20:40:58,585][absl][INFO] - [process=0][thread=MainThread] Skipped cross-host ArrayMetadata validation because only one process is found: process_index=0.
+[2026-06-10 20:40:58,590][absl][INFO] - [process=0][thread=MainThread] Pytree save finalize (merge_ocdbt + ArrayMetadata validation) completed. Time taken: 0.005973s. use_zarr3=False, enable_post_merge_validation=True, directory=/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp
+[2026-06-10 20:40:58,590][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/train_state.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp/train_state
+[2026-06-10 20:40:58,591][absl][INFO] - Renaming /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000.orbax-checkpoint-tmp to /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000
+[2026-06-10 20:40:58,592][absl][INFO] - [process=0][thread=MainThread] Finished saving checkpoint (finalized tmp dir) to `/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000`.
+[2026-06-10 20:40:58,593][absl][INFO] - [process=0] [sync] Finished save in 0.41 seconds @ /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000
+[2026-06-10 20:40:58,593][absl][INFO] - [process=0][thread=MainThread][step=4000] CheckpointManager Save Finalize is syncing with other hosts...
+[2026-06-10 20:40:58,593][absl][INFO] - [process=0][thread=MainThread][step=4000] CheckpointManager Save Finalize is done on all hosts.
+[2026-06-10 20:40:58,594][absl][INFO] - [process=0][thread=MainThread][step=4000] Finished synchronous save.
+[2026-06-10 20:40:58,594][absl][INFO] - {'step': 4000, 'event_type': 'save', 'directory': '/home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7', 'reached_preemption': False, 'preemption_received_at': None, 'synchronous': True, 'wait_for_prev_start_time': 1781091658.185424, 'wait_for_prev_duration_secs': 0.0005552768707275391, 'time_between_consecutive_saves_sec': 17766.031474351883, 'checkpointer_blocking_start_time': 1781091658.1861548, 'checkpointer_blocking_duration_secs': 0.40741467475891113, 'get_old_steps_start_time': 1781091658.5935776, 'get_old_steps_duration_secs': 5.793571472167969e-05, 'checkpoint_manager_blocking_start_time': 1781091658.1853209, 'checkpoint_manager_blocking_duration_secs': 0.4089229106903076}
+[2026-06-10 20:40:58,594][absl][INFO] - [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning.
+[2026-06-10 20:40:58,594][musclemimic.algorithms.common.checkpoint_hooks][INFO] - [MuscleMimic] Saved checkpoint (sync) at update 4000: /home/kan86/Project/musclemimic/checkpoints/d3f7970bcbb7/checkpoint_4000
+[2026-06-10 20:40:58,594][musclemimic.algorithms.common.checkpoint_hooks][INFO] - [MuscleMimic]   Global timestep: 40,960,000
+[2026-06-10 20:41:52,341][musclemimic.runner.engine][INFO] - [MuscleMimic] Combined sweep metric: 2.7603
+No display detected - enabling headless rendering with EGL
+   Set MUJOCO_GL=egl for headless rendering
+[ValidationVideo] Building eval env for recording (tag=validation_1_t40960000_20260610_204152)...
+[Visualization] Building trajectories for env=MyoFullBody with 3 paths.
+[2026-06-10 20:41:54,930][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 1/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/314/walking_medium09_poses.npz. Loading ...
+[2026-06-10 20:41:54,944][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 2/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/348/turn_right03_poses.npz. Loading ...
+[2026-06-10 20:41:54,957][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Dataset 3/3: Found existing retargeted motion file at /home/kan86/.musclemimic/caches/AMASS/MyoFullBody/gmr/KIT/4/WalkInCounterClockwiseCircle04_poses.npz. Loading ...
+[2026-06-10 20:41:54,969][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Concatenating 3 final MyoFullBody trajectories ...
+[2026-06-10 20:41:54,974][amass][INFO] - [MuscleMimic AMASS Retargeting Pipeline] Final concatenation successful!
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[TrajectoryHandler] Skipping site addition for muscle model - trajectory has 17 mimic sites, model has 2038 total sites
+[TrajectoryHandler] traj_dt=0.010000 (100.0Hz), control_dt=0.010000 (100.0Hz)
+[ValidationVideo] Eval env ready; starting rollout for 3000 steps @ 100 fps
+
+--- Episode 1 DONE | steps=101, reward=51.59 ---
+  trajectory: #0, step 552/773 (71%)
+  rewards: qpos=0.000, qvel=0.146, root_pos=0.416, root_vel=0.000, rpos=0.000, rquat=0.046, rvel_lin=0.896, rvel_rot=0.650, total=0.197
+  penalties: activation_energy=0.000, total=-0.029
+  errors: joint_pos=0.3623, joint_vel=0.9125, root_xyz=0.2961, root_yaw=0.1123, rpos=0.3633, site_abs=0.6897
+
+--- Episode 2 DONE | steps=122, reward=57.90 ---
+  trajectory: #0, step 538/773 (70%)
+  rewards: qpos=0.000, qvel=0.004, root_pos=0.055, root_vel=0.000, rpos=0.000, rquat=0.029, rvel_lin=0.924, rvel_rot=0.349, total=0.112
+  penalties: activation_energy=0.000, total=-0.022
+  errors: joint_pos=0.3287, joint_vel=1.6600, root_xyz=0.5386, root_yaw=0.8820, rpos=0.3655, site_abs=0.9807
+
+--- Episode 3 DONE | steps=128, reward=66.01 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.000, qvel=0.220, root_pos=0.087, root_vel=0.000, rpos=0.001, rquat=0.005, rvel_lin=0.978, rvel_rot=0.584, total=0.185
+  penalties: activation_energy=0.000, total=-0.025
+  errors: joint_pos=0.4705, joint_vel=0.8232, root_xyz=0.4939, root_yaw=0.7457, rpos=0.2601, site_abs=0.6882
+
+--- Episode 4 DONE | steps=128, reward=97.20 ---
+  trajectory: #1, step 231/618 (37%)
+  rewards: qpos=0.000, qvel=0.075, root_pos=0.511, root_vel=0.000, rpos=0.000, rquat=0.088, rvel_lin=0.900, rvel_rot=0.740, total=0.207
+  penalties: activation_energy=0.000, total=-0.024
+  errors: joint_pos=0.2390, joint_vel=1.1038, root_xyz=0.2593, root_yaw=0.2576, rpos=0.3377, site_abs=0.6185
+
+--- Episode 5 DONE | steps=155, reward=118.97 ---
+  trajectory: #0, step 239/773 (31%)
+  rewards: qpos=0.000, qvel=0.112, root_pos=0.037, root_vel=0.000, rpos=0.000, rquat=0.012, rvel_lin=0.898, rvel_rot=0.558, total=0.151
+  penalties: activation_energy=0.000, total=-0.021
+  errors: joint_pos=0.3324, joint_vel=0.9873, root_xyz=0.5746, root_yaw=0.2268, rpos=0.3489, site_abs=0.8095
+
+--- Episode 6 DONE | steps=149, reward=116.70 ---
+  trajectory: #0, step 368/773 (48%)
+  rewards: qpos=0.000, qvel=0.281, root_pos=0.036, root_vel=0.000, rpos=0.000, rquat=0.038, rvel_lin=0.908, rvel_rot=0.678, total=0.200
+  penalties: activation_energy=0.000, total=-0.019
+  errors: joint_pos=0.2477, joint_vel=0.6656, root_xyz=0.5761, root_yaw=0.3195, rpos=0.3627, site_abs=0.8663
+
+--- Episode 7 DONE | steps=47, reward=51.58 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.187, qvel=0.701, root_pos=0.995, root_vel=0.766, rpos=0.932, rquat=0.813, rvel_lin=0.998, rvel_rot=0.936, total=1.144
+  penalties: activation_energy=0.000, total=-0.028
+  errors: joint_pos=0.1068, joint_vel=0.4345, root_xyz=0.0234, root_yaw=0.0970, rpos=0.0265, site_abs=0.0545
+
+--- Episode 8 DONE | steps=101, reward=47.27 ---
+  trajectory: #1, step 515/618 (83%)
+  rewards: qpos=0.000, qvel=0.121, root_pos=0.163, root_vel=0.000, rpos=0.000, rquat=0.065, rvel_lin=0.912, rvel_rot=0.641, total=0.165
+  penalties: activation_energy=0.000, total=-0.031
+  errors: joint_pos=0.3017, joint_vel=0.9398, root_xyz=0.4257, root_yaw=0.8797, rpos=0.3604, site_abs=0.7468
+
+--- Episode 9 DONE | steps=226, reward=83.14 ---
+  trajectory: #1, step 611/618 (99%)
+  rewards: qpos=0.000, qvel=0.372, root_pos=0.014, root_vel=0.000, rpos=0.000, rquat=0.002, rvel_lin=0.972, rvel_rot=0.818, total=0.222
+  penalties: activation_energy=0.000, total=-0.033
+  errors: joint_pos=0.6052, joint_vel=0.6735, root_xyz=0.6525, root_yaw=0.1206, rpos=0.3172, site_abs=1.2093
+
+--- Episode 10 DONE | steps=153, reward=67.47 ---
+  trajectory: #2, step 764/840 (91%)
+  rewards: qpos=0.000, qvel=0.528, root_pos=0.086, root_vel=0.000, rpos=0.000, rquat=0.002, rvel_lin=0.983, rvel_rot=0.652, total=0.250
+  penalties: activation_energy=0.000, total=-0.027
+  errors: joint_pos=0.6168, joint_vel=0.5223, root_xyz=0.4950, root_yaw=0.7097, rpos=0.3193, site_abs=0.9088
+
+--- Episode 11 DONE | steps=135, reward=95.93 ---
+  trajectory: #0, step 722/773 (93%)
+  rewards: qpos=0.000, qvel=0.119, root_pos=0.027, root_vel=0.000, rpos=0.000, rquat=0.067, rvel_lin=0.915, rvel_rot=0.823, total=0.175
+  penalties: activation_energy=0.000, total=-0.026
+  errors: joint_pos=0.2926, joint_vel=0.9679, root_xyz=0.6003, root_yaw=0.4321, rpos=0.3526, site_abs=0.8561
+
+--- Episode 12 DONE | steps=118, reward=46.73 ---
+  trajectory: #0, step 615/773 (80%)
+  rewards: qpos=0.000, qvel=0.074, root_pos=0.050, root_vel=0.000, rpos=0.000, rquat=0.004, rvel_lin=0.932, rvel_rot=0.671, total=0.152
+  penalties: activation_energy=0.000, total=-0.028
+  errors: joint_pos=0.4998, joint_vel=1.1517, root_xyz=0.5472, root_yaw=0.1016, rpos=0.3437, site_abs=0.9877
+
+--- Episode 13 DONE | steps=118, reward=70.60 ---
+  trajectory: #1, step 551/618 (89%)
+  rewards: qpos=0.000, qvel=0.000, root_pos=0.031, root_vel=0.000, rpos=0.000, rquat=0.190, rvel_lin=0.928, rvel_rot=0.112, total=0.081
+  penalties: activation_energy=0.000, total=-0.028
+  errors: joint_pos=0.2790, joint_vel=3.7412, root_xyz=0.5897, root_yaw=0.2081, rpos=0.3641, site_abs=0.8986
+
+--- Episode 14 DONE | steps=113, reward=88.24 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.000, qvel=0.469, root_pos=0.223, root_vel=0.000, rpos=0.008, rquat=0.111, rvel_lin=0.971, rvel_rot=0.795, total=0.274
+  penalties: activation_energy=0.000, total=-0.024
+  errors: joint_pos=0.2623, joint_vel=0.5749, root_xyz=0.3876, root_yaw=0.7619, rpos=0.2200, site_abs=0.5051
+
+--- Episode 15 DONE | steps=112, reward=44.95 ---
+  trajectory: #2, step 515/840 (61%)
+  rewards: qpos=0.000, qvel=0.190, root_pos=0.477, root_vel=0.000, rpos=0.000, rquat=0.020, rvel_lin=0.948, rvel_rot=0.681, total=0.227
+  penalties: activation_energy=0.000, total=-0.022
+  errors: joint_pos=0.3502, joint_vel=0.9008, root_xyz=0.2722, root_yaw=0.4961, rpos=0.3287, site_abs=0.6709
+
+--- Episode 16 DONE | steps=125, reward=64.46 ---
+  trajectory: #2, step 713/840 (85%)
+  rewards: qpos=0.000, qvel=0.000, root_pos=0.015, root_vel=0.000, rpos=0.000, rquat=0.060, rvel_lin=0.957, rvel_rot=0.623, total=0.133
+  penalties: activation_energy=0.000, total=-0.027
+  errors: joint_pos=0.3311, joint_vel=2.1346, root_xyz=0.6501, root_yaw=0.5871, rpos=0.3736, site_abs=0.9861
+
+--- Episode 17 DONE | steps=113, reward=47.55 ---
+  trajectory: #2, step 359/840 (43%)
+  rewards: qpos=0.000, qvel=0.103, root_pos=0.273, root_vel=0.000, rpos=0.000, rquat=0.003, rvel_lin=0.924, rvel_rot=0.549, total=0.171
+  penalties: activation_energy=0.000, total=-0.025
+  errors: joint_pos=0.4928, joint_vel=0.9027, root_xyz=0.3602, root_yaw=0.9909, rpos=0.3383, site_abs=0.7421
+
+--- Episode 18 DONE | steps=128, reward=61.68 ---
+  trajectory: #1, step 343/618 (56%)
+  rewards: qpos=0.000, qvel=0.043, root_pos=0.088, root_vel=0.000, rpos=0.000, rquat=0.020, rvel_lin=0.912, rvel_rot=0.444, total=0.133
+  penalties: activation_energy=0.000, total=-0.020
+  errors: joint_pos=0.3323, joint_vel=1.1054, root_xyz=0.4925, root_yaw=2.1746, rpos=0.3239, site_abs=0.9498
+
+--- Episode 19 DONE | steps=212, reward=77.69 ---
+  trajectory: #1, step 595/618 (96%)
+  rewards: qpos=0.000, qvel=0.367, root_pos=0.016, root_vel=0.000, rpos=0.000, rquat=0.003, rvel_lin=0.974, rvel_rot=0.790, total=0.229
+  penalties: activation_energy=0.000, total=-0.022
+  errors: joint_pos=0.5877, joint_vel=0.6916, root_xyz=0.6425, root_yaw=0.0637, rpos=0.3120, site_abs=1.1904
+
+--- Episode 20 DONE | steps=136, reward=105.22 ---
+  trajectory: #0, step 771/773 (100%)
+  rewards: qpos=0.000, qvel=0.210, root_pos=0.038, root_vel=0.000, rpos=0.000, rquat=0.113, rvel_lin=0.902, rvel_rot=0.673, total=0.179
+  penalties: activation_energy=0.000, total=-0.026
+  errors: joint_pos=0.2619, joint_vel=0.7843, root_xyz=0.5707, root_yaw=0.0663, rpos=0.3503, site_abs=0.8382
+
+--- Episode 21 DONE | steps=139, reward=55.19 ---
+  trajectory: #0, step 628/773 (81%)
+  rewards: qpos=0.000, qvel=0.187, root_pos=0.003, root_vel=0.000, rpos=0.000, rquat=0.003, rvel_lin=0.931, rvel_rot=0.684, total=0.172
+  penalties: activation_energy=0.000, total=-0.027
+  errors: joint_pos=0.4795, joint_vel=0.8491, root_xyz=0.7559, root_yaw=0.2272, rpos=0.3499, site_abs=1.1913
+
+--- Episode 22 DONE | steps=96, reward=50.26 ---
+  trajectory: #2, step 292/840 (35%)
+  rewards: qpos=0.000, qvel=0.118, root_pos=0.099, root_vel=0.000, rpos=0.000, rquat=0.052, rvel_lin=0.874, rvel_rot=0.449, total=0.140
+  penalties: activation_energy=0.000, total=-0.027
+  errors: joint_pos=0.2188, joint_vel=0.8963, root_xyz=0.4812, root_yaw=0.4888, rpos=0.3989, site_abs=0.7431
+
+--- Episode 23 DONE | steps=99, reward=94.39 ---
+  trajectory: #1, step 617/618 (100%)
+  rewards: qpos=0.008, qvel=0.679, root_pos=0.840, root_vel=0.201, rpos=0.383, rquat=0.393, rvel_lin=0.995, rvel_rot=0.957, total=0.665
+  penalties: activation_energy=0.000, total=-0.024
+  errors: joint_pos=0.2695, joint_vel=0.4430, root_xyz=0.1322, root_yaw=0.0648, rpos=0.0980, site_abs=0.2167
+Successfully compressed recorded video and saved at:  /home/kan86/Project/musclemimic/outputs/2026-06-10/11-53-05/validation_1_t40960000_20260610_204152/MyoFullBody.mp4
+[2026-06-10 22:06:02,812][musclemimic.runner.engine][INFO] - [MuscleMimic] Validation video recorded: /home/kan86/Project/musclemimic/outputs/2026-06-10/11-53-05/validation_1_t40960000_20260610_204152/MyoFullBody.mp4

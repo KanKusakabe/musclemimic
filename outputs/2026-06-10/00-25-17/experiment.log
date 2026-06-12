@@ -1,0 +1,10 @@
+[2026-06-10 00:25:17,792][musclemimic.runner.engine][INFO] - [MuscleMimic] JAX compilation cache enabled at: /home/kan86/.musclemimic/.jax_cache
+[2026-06-10 00:28:50,487][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-10 00:28:51,142][musclemimic.environments.humanoids.myofullbody][INFO] - [MyoFullBody] nconmax=96 (per-env), naconmax=196608 (total), njmax=768
+[2026-06-10 00:28:51,143][musclemimic.environments.humanoids.myofullbody][INFO] - [MyoFullBody] Keeping all contacts enabled for Warp backend
+[2026-06-10 00:28:51,710][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-10 00:28:51,710][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-10 00:28:51,711][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check

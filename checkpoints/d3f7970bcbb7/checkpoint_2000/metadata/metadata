@@ -1,0 +1,1 @@
+{"step": 256000, "update_number": 2000, "global_timestep": 20480000, "target_global_timestep": 2048000000, "learning_rate": 0.00039999998989515007, "num_envs": 1024, "num_steps": 10, "num_minibatches": 128, "update_epochs": 1, "schema_version": "2.2", "algo_version": "PPOJax_v1", "backend": "mjx", "env_name": "NormalizeVecReward"}

@@ -1,0 +1,42 @@
+{
+  "os": "Linux-5.15.90.1-microsoft-standard-WSL2+-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.14",
+  "startedAt": "2026-06-09T15:45:33.918674Z",
+  "args": [
+    "--config-name=conf_fullbody_demo"
+  ],
+  "program": "/home/kan86/Project/musclemimic/fullbody/experiment.py",
+  "codePath": "fullbody/experiment.py",
+  "codePathLocal": "fullbody/experiment.py",
+  "git": {
+    "remote": "https://github.com/amathislab/musclemimic.git",
+    "commit": "b67260913f2d6b035972b5da71f6cd5ccd54e613"
+  },
+  "email": "kusakabe.kan.v5@elms.hokudai.ac.jp",
+  "root": "/home/kan86/Project/musclemimic",
+  "host": "HCIStraylight",
+  "executable": "/home/kan86/Project/musclemimic/.venv/bin/python3",
+  "cpu_count": 14,
+  "cpu_count_logical": 28,
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1081101176832",
+      "used": "134394527744"
+    }
+  },
+  "memory": {
+    "total": "33504542720"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4070",
+      "memoryTotal": "12878610432",
+      "architecture": "Ada",
+      "uuid": "GPU-538ed15d-1a51-b63f-94be-044946fc46be"
+    }
+  ],
+  "cudaVersion": "12.4",
+  "writerId": "4dz8o1mol5zy1975j8s469ocmq042kiq"
+}

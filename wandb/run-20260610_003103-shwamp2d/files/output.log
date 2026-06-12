@@ -1,0 +1,102 @@
+[2026-06-10 00:31:04,419][musclemimic.runner.engine][INFO] - [MuscleMimic] [Trajectory] Auto-enabled skip_body_data (validation doesn't use BodyPosition/BodyOrientation/BodyVelocity).
+[2026-06-10 00:31:04,982][musclemimic.environments.humanoids.myofullbody][INFO] - [MyoFullBody] nconmax=96 (per-env), naconmax=196608 (total), njmax=768
+[2026-06-10 00:31:04,983][musclemimic.environments.humanoids.myofullbody][INFO] - [MyoFullBody] Keeping all contacts enabled for Warp backend
+[2026-06-10 00:31:05,588][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal] MeanRelativeSiteDeviationWithRootTerminalStateHandler initialized
+[2026-06-10 00:31:05,589][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Mean site deviation threshold (default): 1.0m
+[2026-06-10 00:31:05,589][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root deviation threshold: 1.0m
+[2026-06-10 00:31:05,589][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root orientation threshold: 1.0 rad
+[2026-06-10 00:31:05,590][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Root site: pelvis_mimic (id=1725)
+[2026-06-10 00:31:05,590][musclemimic.core.terminal_state_handler.enhanced_fullbody][INFO] - [FullBodyTerminal]   Uses: Relative positions w.r.t root + root absolute position check
+Warp 1.10.0 initialized:
+   CUDA Toolkit 12.8, Driver 12.4
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4070" (12 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /home/kan86/.cache/warp/1.10.0
+Using Warp backend (version 1.10.0)
+INFO:2026-06-10 00:31:06,089:jax._src.xla_bridge:822: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+[2026-06-10 00:31:06,089][jax._src.xla_bridge][INFO] - Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+WARNING:2026-06-10 00:31:06,090:jax._src.xla_bridge:864: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+[2026-06-10 00:31:06,090][jax._src.xla_bridge][WARNING] - An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+Traceback (most recent call last):
+  File "/home/kan86/Project/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 450, in run_experiment
+    env = instantiate_env(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 180, in instantiate_env
+    env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 97, in make
+    env = env_cls(
+          ^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 574, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 133, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/base.py", line 103, in __init__
+    super(LocoEnv, self).__init__(**core_params)
+  File "/home/kan86/Project/musclemimic/musclemimic/core/mujoco_mjx.py", line 85, in __init__
+    self.sys = mjx.put_model(self._model, impl=backend_impl)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/io.py", line 511, in put_model
+    impl, device = _resolve_impl_and_device(impl, device)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/io.py", line 148, in _resolve_impl_and_device
+    device = _resolve_device(impl)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/io.py", line 92, in _resolve_device
+    cuda_gpus = [d for d in jax.devices('cuda')]
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 1010, in devices
+    return get_backend(backend).devices()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 944, in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 932, in _get_backend_uncached
+    raise RuntimeError(
+RuntimeError: Unknown backend cuda. Available backends are ['cpu']
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "/home/kan86/Project/musclemimic/fullbody/experiment.py", line 17, in experiment
+    run_experiment(config, hooks=UnifiedHooks())
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 450, in run_experiment
+    env = instantiate_env(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/runner/engine.py", line 180, in instantiate_env
+    env = factory.make(**config.experiment.env_params, **config.experiment.task_factory.params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/loco_mujoco/task_factories/imitation_factory.py", line 97, in make
+    env = env_cls(
+          ^^^^^^^^
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 574, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/humanoids/myofullbody.py", line 133, in __init__
+    super().__init__(
+  File "/home/kan86/Project/musclemimic/musclemimic/environments/base.py", line 103, in __init__
+    super(LocoEnv, self).__init__(**core_params)
+  File "/home/kan86/Project/musclemimic/musclemimic/core/mujoco_mjx.py", line 85, in __init__
+    self.sys = mjx.put_model(self._model, impl=backend_impl)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/io.py", line 511, in put_model
+    impl, device = _resolve_impl_and_device(impl, device)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/io.py", line 148, in _resolve_impl_and_device
+    device = _resolve_device(impl)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/mujoco/mjx/_src/io.py", line 92, in _resolve_device
+    cuda_gpus = [d for d in jax.devices('cuda')]
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 1010, in devices
+    return get_backend(backend).devices()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 944, in get_backend
+    return _get_backend_uncached(platform)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kan86/Project/musclemimic/.venv/lib/python3.11/site-packages/jax/_src/xla_bridge.py", line 932, in _get_backend_uncached
+    raise RuntimeError(
+RuntimeError: Unknown backend cuda. Available backends are ['cpu']
+
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
